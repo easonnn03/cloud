@@ -1,0 +1,23 @@
+﻿Areas is the folder auto-generated after scaffolding ASP.NET identity
+It is a razor pages format which combine HTML (View) and C# (Backend logic) in one file structure
+
+/Account/Login - handles user authentication
+/Account/Regitser - handles new user registration
+/Account?Manage/Index - allow iser to update profile, password and authentications methods
+
+---------------
+Frontend logic
+---------------
+Frontend located at /Areas/Identity/Pages/Account/Login.cshtml && Register.cshtml
+					/Areas/Identity/Pages/Account/Manage/Index.cshtml
+
+---------------
+Backend logic 
+---------------
+Frontend located at /Areas/Identity/Pages/Account/Login.cshtml/Login.cshtml.cs && Register.cshtml/Register.cshtml.cs
+					/Areas/Identity/Pages/Account/Manage/Index.cshtml/Index.cshtml.cs
+
+---------------
+DBContext
+---------------
+DBContext located at /Areas/Identity/Data/cloudassContext.cs
