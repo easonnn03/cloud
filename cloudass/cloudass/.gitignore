@@ -1,0 +1,39 @@
+﻿# Ignore Visual Studio files
+.vscode/
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Ignore build files
+bin/
+obj/
+*.dll
+*.exe
+*.pdb
+*.appx
+*.appxbundle
+*.msix
+*.msixbundle
+*.nupkg
+*.snupkg
+*.ilk
+*.map
+*.exp
+*.iobj
+*.ipdb
+
+# Ignore log files
+logs/
+*.log
+*.tlog
+
+# Ignore temporary files
+*.tmp
+*.cache
+*.csproj.user
+
+# Ignore config files
+appsettings.json
+appsettings.Development.json
