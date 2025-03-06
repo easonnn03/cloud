@@ -14,11 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("cloudass")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-<<<<<<< Updated upstream
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ef571c0d3d6cce459615d1d9002a432633719a2a")]
-=======
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+04ae4bb7c4d647f250da00c660279d378b97dd9e")]
->>>>>>> Stashed changes
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+868e356a571c574c308f642df3f69f514314e637")]
 [assembly: System.Reflection.AssemblyProductAttribute("cloudass")]
 [assembly: System.Reflection.AssemblyTitleAttribute("cloudass")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
