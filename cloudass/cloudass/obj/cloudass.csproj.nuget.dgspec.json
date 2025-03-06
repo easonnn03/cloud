@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Asus\\Desktop\\cloud\\cloudass\\cloudass\\cloudass.csproj": {}
+    "D:\\CS_general\\Year3Sem2\\Cloud\\Assignment\\DentalApointmentSystem\\cloud\\cloudass\\cloudass\\cloudass.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Asus\\Desktop\\cloud\\cloudass\\cloudass\\cloudass.csproj": {
+    "D:\\CS_general\\Year3Sem2\\Cloud\\Assignment\\DentalApointmentSystem\\cloud\\cloudass\\cloudass\\cloudass.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Asus\\Desktop\\cloud\\cloudass\\cloudass\\cloudass.csproj",
+        "projectUniqueName": "D:\\CS_general\\Year3Sem2\\Cloud\\Assignment\\DentalApointmentSystem\\cloud\\cloudass\\cloudass\\cloudass.csproj",
         "projectName": "cloudass",
-        "projectPath": "C:\\Users\\Asus\\Desktop\\cloud\\cloudass\\cloudass\\cloudass.csproj",
-        "packagesPath": "C:\\Users\\Asus\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Asus\\Desktop\\cloud\\cloudass\\cloudass\\obj\\",
+        "projectPath": "D:\\CS_general\\Year3Sem2\\Cloud\\Assignment\\DentalApointmentSystem\\cloud\\cloudass\\cloudass\\cloudass.csproj",
+        "packagesPath": "C:\\Users\\wjing\\.nuget\\packages\\",
+        "outputPath": "D:\\CS_general\\Year3Sem2\\Cloud\\Assignment\\DentalApointmentSystem\\cloud\\cloudass\\cloudass\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Asus\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\wjing\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -68,7 +68,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.103/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
