@@ -1,22 +1,18 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Asus\\Desktop\\cloud\\cloudass\\",
+  "WorkspaceRootPath": "D:\\CS_general\\Year3Sem2\\Cloud\\Assignment\\DentalApointmentSystem\\cloud\\cloudass\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{43D2A9D1-EE6E-424D-9A41-869649703607}|cloudass\\cloudass.csproj|c:\\users\\asus\\desktop\\cloud\\cloudass\\cloudass\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{43D2A9D1-EE6E-424D-9A41-869649703607}|cloudass\\cloudass.csproj|solutionrelative:cloudass\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{43D2A9D1-EE6E-424D-9A41-869649703607}|cloudass\\cloudass.csproj|d:\\cs_general\\year3sem2\\cloud\\assignment\\dentalapointmentsystem\\cloud\\cloudass\\cloudass\\models\\schedule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{43D2A9D1-EE6E-424D-9A41-869649703607}|cloudass\\cloudass.csproj|solutionrelative:cloudass\\models\\schedule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{43D2A9D1-EE6E-424D-9A41-869649703607}|cloudass\\cloudass.csproj|c:\\users\\asus\\desktop\\cloud\\cloudass\\cloudass\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{43D2A9D1-EE6E-424D-9A41-869649703607}|cloudass\\cloudass.csproj|solutionrelative:cloudass\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{43D2A9D1-EE6E-424D-9A41-869649703607}|cloudass\\cloudass.csproj|d:\\cs_general\\year3sem2\\cloud\\assignment\\dentalapointmentsystem\\cloud\\cloudass\\cloudass\\controllers\\schedulecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{43D2A9D1-EE6E-424D-9A41-869649703607}|cloudass\\cloudass.csproj|solutionrelative:cloudass\\controllers\\schedulecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{43D2A9D1-EE6E-424D-9A41-869649703607}|cloudass\\cloudass.csproj|c:\\users\\asus\\desktop\\cloud\\cloudass\\cloudass\\views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{43D2A9D1-EE6E-424D-9A41-869649703607}|cloudass\\cloudass.csproj|solutionrelative:cloudass\\views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{43D2A9D1-EE6E-424D-9A41-869649703607}|cloudass\\cloudass.csproj|c:\\users\\asus\\desktop\\cloud\\cloudass\\cloudass\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{43D2A9D1-EE6E-424D-9A41-869649703607}|cloudass\\cloudass.csproj|solutionrelative:cloudass\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{43D2A9D1-EE6E-424D-9A41-869649703607}|cloudass\\cloudass.csproj|d:\\cs_general\\year3sem2\\cloud\\assignment\\dentalapointmentsystem\\cloud\\cloudass\\cloudass\\views\\appointment\\schedule.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{43D2A9D1-EE6E-424D-9A41-869649703607}|cloudass\\cloudass.csproj|solutionrelative:cloudass\\views\\appointment\\schedule.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,63 +22,48 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 2,
           "Children": [
             {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "_ValidationScriptsPartial.cshtml",
-              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\cloud\\cloudass\\cloudass\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
-              "RelativeDocumentMoniker": "cloudass\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
-              "ToolTip": "C:\\Users\\Asus\\Desktop\\cloud\\cloudass\\cloudass\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
-              "RelativeToolTip": "cloudass\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-03T12:53:39.215Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "_ViewImports.cshtml",
-              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\cloud\\cloudass\\cloudass\\Views\\_ViewImports.cshtml",
-              "RelativeDocumentMoniker": "cloudass\\Views\\_ViewImports.cshtml",
-              "ToolTip": "C:\\Users\\Asus\\Desktop\\cloud\\cloudass\\cloudass\\Views\\_ViewImports.cshtml",
-              "RelativeToolTip": "cloudass\\Views\\_ViewImports.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAPAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-03T12:49:53.93Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "ErrorViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\cloud\\cloudass\\cloudass\\Models\\ErrorViewModel.cs",
-              "RelativeDocumentMoniker": "cloudass\\Models\\ErrorViewModel.cs",
-              "ToolTip": "C:\\Users\\Asus\\Desktop\\cloud\\cloudass\\cloudass\\Models\\ErrorViewModel.cs",
-              "RelativeToolTip": "cloudass\\Models\\ErrorViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "ScheduleController.cs",
+              "DocumentMoniker": "D:\\CS_general\\Year3Sem2\\Cloud\\Assignment\\DentalApointmentSystem\\cloud\\cloudass\\cloudass\\Controllers\\ScheduleController.cs",
+              "RelativeDocumentMoniker": "cloudass\\Controllers\\ScheduleController.cs",
+              "ToolTip": "D:\\CS_general\\Year3Sem2\\Cloud\\Assignment\\DentalApointmentSystem\\cloud\\cloudass\\cloudass\\Controllers\\ScheduleController.cs",
+              "RelativeToolTip": "cloudass\\Controllers\\ScheduleController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-03T12:49:14.923Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-05T13:40:32.648Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\cloud\\cloudass\\cloudass\\Program.cs",
-              "RelativeDocumentMoniker": "cloudass\\Program.cs",
-              "ToolTip": "C:\\Users\\Asus\\Desktop\\cloud\\cloudass\\cloudass\\Program.cs",
-              "RelativeToolTip": "cloudass\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAZAAAAAAAAAA==",
+              "Title": "Schedule.cs",
+              "DocumentMoniker": "D:\\CS_general\\Year3Sem2\\Cloud\\Assignment\\DentalApointmentSystem\\cloud\\cloudass\\cloudass\\Models\\Schedule.cs",
+              "RelativeDocumentMoniker": "cloudass\\Models\\Schedule.cs",
+              "ToolTip": "D:\\CS_general\\Year3Sem2\\Cloud\\Assignment\\DentalApointmentSystem\\cloud\\cloudass\\cloudass\\Models\\Schedule.cs",
+              "RelativeToolTip": "cloudass\\Models\\Schedule.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAgAAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-03T10:15:53.021Z",
+              "WhenOpened": "2025-03-05T13:38:50.673Z",
               "EditorCaption": ""
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Schedule.cshtml",
+              "DocumentMoniker": "D:\\CS_general\\Year3Sem2\\Cloud\\Assignment\\DentalApointmentSystem\\cloud\\cloudass\\cloudass\\Views\\Appointment\\Schedule.cshtml",
+              "RelativeDocumentMoniker": "cloudass\\Views\\Appointment\\Schedule.cshtml",
+              "ToolTip": "D:\\CS_general\\Year3Sem2\\Cloud\\Assignment\\DentalApointmentSystem\\cloud\\cloudass\\cloudass\\Views\\Appointment\\Schedule.cshtml",
+              "RelativeToolTip": "cloudass\\Views\\Appointment\\Schedule.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-05T14:24:37.178Z"
             }
           ]
         }
