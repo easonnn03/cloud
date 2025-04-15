@@ -1,7 +1,13 @@
-﻿using cloudass.Areas.Identity.Data;
+﻿using cloudass.Models;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+
+/*
+DbContext handles connecting to a database (with connection string)
+Mapping C# classes (models) to db tables 
+LINQ instead of raw SQL
+*/
 
 namespace cloudass.Data;
 
@@ -12,6 +18,7 @@ public class cloudassContext : IdentityDbContext<User>
     {
     }
 
+    public DbSet<Appointment> Appointments { get; set; }
     protected override void OnModelCreating(ModelBuilder builder)
     {
         base.OnModelCreating(builder);

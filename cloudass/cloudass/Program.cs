@@ -1,13 +1,14 @@
-//foundation of the web app
+//Entry Point 
+//Boostrap application
+//configure services and middleware 
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using cloudass.Data;
-using cloudass.Areas.Identity.Data;
+using System;
 
-//configure logging, configuration, dependency injection and etc.
 var builder = WebApplication.CreateBuilder(args);
-var connectionString = builder.Configuration.GetConnectionString("cloudassContextConnection") ?? throw new InvalidOperationException("Connection string 'cloudassContextConnection' not found.");
 
+var connectionString = builder.Configuration.GetConnectionString("cloudassContextConnection") ?? throw new InvalidOperationException("Connection string 'cloudassContextConnection' not found.");
 builder.Services.AddDbContext<cloudassContext>(options => options.UseSqlServer(connectionString));
 
 builder.Services.AddDefaultIdentity<User>(options => options.SignIn.RequireConfirmedAccount = true).AddEntityFrameworkStores<cloudassContext>();
@@ -19,7 +20,6 @@ builder.Services.AddRazorPages();
 //create a app instance (actual running web app)
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
 {
     app.UseExceptionHandler("/Home/Error");
