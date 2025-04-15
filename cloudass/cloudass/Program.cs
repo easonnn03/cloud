@@ -2,15 +2,20 @@
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using cloudass.Data;
-using cloudass.Areas.Identity.Data;
+using cloudass.Repository;
+using cloudass.Services;
 
 //configure logging, configuration, dependency injection and etc.
 var builder = WebApplication.CreateBuilder(args);
 var connectionString = builder.Configuration.GetConnectionString("cloudassContextConnection") ?? throw new InvalidOperationException("Connection string 'cloudassContextConnection' not found.");
 
 builder.Services.AddDbContext<cloudassContext>(options => options.UseSqlServer(connectionString));
-
+builder.Services.AddDbContext<AppDbContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("cloudassContextConnection")));
+builder.Services.AddScoped<IAppointmentRepository, AppointmentRepository>();
+builder.Services.AddScoped<IAppointmentService, AppointmentService>();
 builder.Services.AddDefaultIdentity<User>(options => options.SignIn.RequireConfirmedAccount = true).AddEntityFrameworkStores<cloudassContext>();
+
 
 // Adds mvc support: Controller + Views(enables controller based routing: HomeController handling requests)
 builder.Services.AddControllersWithViews();

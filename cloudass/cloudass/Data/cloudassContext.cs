@@ -1,4 +1,4 @@
-﻿using cloudass.Areas.Identity.Data;
+﻿using cloudass.Data;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
