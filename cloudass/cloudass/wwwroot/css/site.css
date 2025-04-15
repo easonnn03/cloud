@@ -20,3 +20,119 @@ html {
 body {
   margin-bottom: 60px;
 }
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f8f9fa;
+}
+
+/* Navigation Links */
+.navbar .nav-link {
+    font-weight: 500;
+    color: #1b6ec2 !important;
+}
+
+    .navbar .nav-link:hover {
+        color: #105fa5 !important;
+    }
+
+/* Buttons */
+.btn-dark {
+    background-color: #1b6ec2;
+    border-color: #1861ac;
+}
+
+    .btn-dark:hover {
+        background-color: #155a9d;
+        border-color: #124a80;
+    }
+
+/* Card Styling */
+.bg-light {
+    border-radius: 12px;
+    padding: 2rem;
+}
+
+/* Hero section */
+.hero {
+    background-color: #f0f2f5;
+    padding: 4rem 1rem;
+    text-align: center;
+}
+
+    .hero h1 {
+        font-size: 3rem;
+        font-weight: 700;
+    }
+
+    .hero p {
+        font-size: 1.25rem;
+        color: #666;
+    }
+
+/* Fix footer if needed later */
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    line-height: 60px;
+    background-color: #e9ecef;
+    text-align: center;
+}
+
+.hero-image {
+    background-image: url('/images/DenTeeth.jpg'); 
+    background-size: cover;
+    background-position: top;
+    height: 400px;
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.hero-text {
+    background-color: rgba(0, 0, 0, 0.4); /* Optional dark overlay */
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+    .hero-text h1,
+    .hero-text p {
+        color: #fff;
+        text-shadow: 1px 1px 4px rgba(0,0,0,0.6);
+    }
+
+.image-card {
+    height: 120px;
+    background-color: #000;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+    .image-card img {
+        object-fit: cover;
+        object-position: center;
+        height: 100%;
+        width: 100%;
+        opacity: 0.8;
+        transition: 0.3s ease-in-out;
+    }
+
+    .image-card:hover img {
+        opacity: 1;
+        transform: scale(1.02);
+    }
+
+.image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4);
+    color: white;
+    text-align: center;
+    transition: background 0.3s ease;
+}
+
+.image-card:hover .image-overlay {
+    background: rgba(0, 0, 0, 0.6);
+}
