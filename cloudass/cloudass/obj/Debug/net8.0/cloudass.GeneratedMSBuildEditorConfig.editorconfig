@@ -24,8 +24,20 @@ build_property.EnableCodeStyleSeverity =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/HappyMan20/Desktop/Year 3 sem 2/DDAC/cloud/cloudass/cloudass/Views/Home/Privacy.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+[C:/Users/HappyMan20/Desktop/Year 3 sem 2/DDAC/cloud/cloudass/cloudass/Views/Home/Teeth_Bracing.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxUZWV0aF9CcmFjaW5nLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HappyMan20/Desktop/Year 3 sem 2/DDAC/cloud/cloudass/cloudass/Views/Home/Teeth_Cleaning.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxUZWV0aF9DbGVhbmluZy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HappyMan20/Desktop/Year 3 sem 2/DDAC/cloud/cloudass/cloudass/Views/Home/Tooth_Extraction.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxUb290aF9FeHRyYWN0aW9uLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HappyMan20/Desktop/Year 3 sem 2/DDAC/cloud/cloudass/cloudass/Views/Home/Tooth_Fillings.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxUb290aF9GaWxsaW5ncy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/HappyMan20/Desktop/Year 3 sem 2/DDAC/cloud/cloudass/cloudass/Views/Shared/Error.cshtml]

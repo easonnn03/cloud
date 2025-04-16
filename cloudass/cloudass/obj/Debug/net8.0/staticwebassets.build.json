@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "9jTx/Z3ngdkb2MXOKlZyJ7r02znvSx88dVwKJ+HmoNY=",
+  "Hash": "UWCPuFJYmU6V3sWwjE6vzzSlsFzBjy5V7cnWutiXMCA=",
   "Source": "cloudass",
   "BasePath": "_content/cloudass",
   "Mode": "Default",
@@ -73,8 +73,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "eg81gciswq",
-      "Integrity": "8j4/YF/f4kSygGQ3yJKO1P0eR/XxiLd2A+sL/piOqa4=",
+      "Fingerprint": "xfy6fdavnw",
+      "Integrity": "I+n4soFaY0KE5Lf+y0zfZrjHeGidareMCQ9jJkk6jZs=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\site.css"
@@ -99,6 +99,48 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\HappyMan20\\Desktop\\Year 3 sem 2\\DDAC\\cloud\\cloudass\\cloudass\\wwwroot\\images\\Braces.jpg",
+      "SourceId": "cloudass",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\HappyMan20\\Desktop\\Year 3 sem 2\\DDAC\\cloud\\cloudass\\cloudass\\wwwroot\\",
+      "BasePath": "_content/cloudass",
+      "RelativePath": "images/Braces#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "mojie00vnp",
+      "Integrity": "2j2nALsvztfSCaBB6mdGw34qcKRpZ+bLTaY/LYgNkbQ=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\Braces.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\HappyMan20\\Desktop\\Year 3 sem 2\\DDAC\\cloud\\cloudass\\cloudass\\wwwroot\\images\\Braces2.jpg",
+      "SourceId": "cloudass",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\HappyMan20\\Desktop\\Year 3 sem 2\\DDAC\\cloud\\cloudass\\cloudass\\wwwroot\\",
+      "BasePath": "_content/cloudass",
+      "RelativePath": "images/Braces2#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "35rpq09omu",
+      "Integrity": "pz8YMGvrVfAVL1RXIAlUBbpuFrvMFJhzb8XfuASFFGo=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\Braces2.jpg"
     },
     {
       "Identity": "C:\\Users\\HappyMan20\\Desktop\\Year 3 sem 2\\DDAC\\cloud\\cloudass\\cloudass\\wwwroot\\images\\DenTeeth.jpg",
@@ -162,6 +204,90 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\Our_Services.jpeg"
+    },
+    {
+      "Identity": "C:\\Users\\HappyMan20\\Desktop\\Year 3 sem 2\\DDAC\\cloud\\cloudass\\cloudass\\wwwroot\\images\\Teeth_Cleaning.jpg",
+      "SourceId": "cloudass",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\HappyMan20\\Desktop\\Year 3 sem 2\\DDAC\\cloud\\cloudass\\cloudass\\wwwroot\\",
+      "BasePath": "_content/cloudass",
+      "RelativePath": "images/Teeth_Cleaning#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "lbwvhs7p8a",
+      "Integrity": "n/kNeJZ8r2jOffywQSq3nLz/FikImw4vhgk94FGGxdA=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\Teeth_Cleaning.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\HappyMan20\\Desktop\\Year 3 sem 2\\DDAC\\cloud\\cloudass\\cloudass\\wwwroot\\images\\Teeth_Cleaning2.jpg",
+      "SourceId": "cloudass",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\HappyMan20\\Desktop\\Year 3 sem 2\\DDAC\\cloud\\cloudass\\cloudass\\wwwroot\\",
+      "BasePath": "_content/cloudass",
+      "RelativePath": "images/Teeth_Cleaning2#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "i05dc30w5s",
+      "Integrity": "Xi0W39ProFybLi9COCfvb9PzmRhE3m0r9KZle9El1cw=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\Teeth_Cleaning2.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\HappyMan20\\Desktop\\Year 3 sem 2\\DDAC\\cloud\\cloudass\\cloudass\\wwwroot\\images\\Teeth_Filling.jpg",
+      "SourceId": "cloudass",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\HappyMan20\\Desktop\\Year 3 sem 2\\DDAC\\cloud\\cloudass\\cloudass\\wwwroot\\",
+      "BasePath": "_content/cloudass",
+      "RelativePath": "images/Teeth_Filling#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "e9mi19oqen",
+      "Integrity": "zlkjG+c2N2TVIubUtFTr5PB436Ds6Z88pMzQogTae7s=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\Teeth_Filling.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\HappyMan20\\Desktop\\Year 3 sem 2\\DDAC\\cloud\\cloudass\\cloudass\\wwwroot\\images\\Tooth_Extraction.jpg",
+      "SourceId": "cloudass",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\HappyMan20\\Desktop\\Year 3 sem 2\\DDAC\\cloud\\cloudass\\cloudass\\wwwroot\\",
+      "BasePath": "_content/cloudass",
+      "RelativePath": "images/Tooth_Extraction#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "ndz9a386o7",
+      "Integrity": "pa6m3uEwIn6rYirPxpHXIN9kTmDjFSBZV9vPwj51vEU=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\Tooth_Extraction.jpg"
     },
     {
       "Identity": "C:\\Users\\HappyMan20\\Desktop\\Year 3 sem 2\\DDAC\\cloud\\cloudass\\cloudass\\wwwroot\\js\\site.js",
@@ -1406,7 +1532,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 14 Apr 2025 16:26:54 GMT"
+          "Value": "Tue, 15 Apr 2025 19:43:41 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1443,7 +1569,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 14 Apr 2025 16:26:54 GMT"
+          "Value": "Tue, 15 Apr 2025 19:43:41 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1488,7 +1614,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 14 Apr 2025 16:26:54 GMT"
+          "Value": "Tue, 15 Apr 2025 19:43:41 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1533,7 +1659,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 14 Apr 2025 16:26:54 GMT"
+          "Value": "Tue, 15 Apr 2025 19:43:41 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1558,7 +1684,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2542"
+          "Value": "7879"
         },
         {
           "Name": "Content-Type",
@@ -1566,11 +1692,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"8j4/YF/f4kSygGQ3yJKO1P0eR/XxiLd2A+sL/piOqa4=\""
+          "Value": "\"I+n4soFaY0KE5Lf+y0zfZrjHeGidareMCQ9jJkk6jZs=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 14 Apr 2025 19:13:35 GMT"
+          "Value": "Tue, 15 Apr 2025 22:44:57 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1580,12 +1706,12 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-8j4/YF/f4kSygGQ3yJKO1P0eR/XxiLd2A+sL/piOqa4="
+          "Value": "sha256-I+n4soFaY0KE5Lf+y0zfZrjHeGidareMCQ9jJkk6jZs="
         }
       ]
     },
     {
-      "Route": "css/site.eg81gciswq.css",
+      "Route": "css/site.xfy6fdavnw.css",
       "AssetFile": "C:\\Users\\HappyMan20\\Desktop\\Year 3 sem 2\\DDAC\\cloud\\cloudass\\cloudass\\wwwroot\\css\\site.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -1595,7 +1721,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2542"
+          "Value": "7879"
         },
         {
           "Name": "Content-Type",
@@ -1603,11 +1729,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"8j4/YF/f4kSygGQ3yJKO1P0eR/XxiLd2A+sL/piOqa4=\""
+          "Value": "\"I+n4soFaY0KE5Lf+y0zfZrjHeGidareMCQ9jJkk6jZs=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 14 Apr 2025 19:13:35 GMT"
+          "Value": "Tue, 15 Apr 2025 22:44:57 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1617,7 +1743,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "eg81gciswq"
+          "Value": "xfy6fdavnw"
         },
         {
           "Name": "label",
@@ -1625,7 +1751,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-8j4/YF/f4kSygGQ3yJKO1P0eR/XxiLd2A+sL/piOqa4="
+          "Value": "sha256-I+n4soFaY0KE5Lf+y0zfZrjHeGidareMCQ9jJkk6jZs="
         }
       ]
     },
@@ -1708,6 +1834,170 @@
         {
           "Name": "integrity",
           "Value": "sha256-Jtxf9L+5ITKRc1gIRl4VbUpGkRNfOBXjYTdhJD4facM="
+        }
+      ]
+    },
+    {
+      "Route": "images/Braces.jpg",
+      "AssetFile": "C:\\Users\\HappyMan20\\Desktop\\Year 3 sem 2\\DDAC\\cloud\\cloudass\\cloudass\\wwwroot\\images\\Braces.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "47930"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"2j2nALsvztfSCaBB6mdGw34qcKRpZ+bLTaY/LYgNkbQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 15 Apr 2025 19:57:25 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-2j2nALsvztfSCaBB6mdGw34qcKRpZ+bLTaY/LYgNkbQ="
+        }
+      ]
+    },
+    {
+      "Route": "images/Braces.mojie00vnp.jpg",
+      "AssetFile": "C:\\Users\\HappyMan20\\Desktop\\Year 3 sem 2\\DDAC\\cloud\\cloudass\\cloudass\\wwwroot\\images\\Braces.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "47930"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"2j2nALsvztfSCaBB6mdGw34qcKRpZ+bLTaY/LYgNkbQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 15 Apr 2025 19:57:25 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "mojie00vnp"
+        },
+        {
+          "Name": "label",
+          "Value": "images/Braces.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-2j2nALsvztfSCaBB6mdGw34qcKRpZ+bLTaY/LYgNkbQ="
+        }
+      ]
+    },
+    {
+      "Route": "images/Braces2.35rpq09omu.jpg",
+      "AssetFile": "C:\\Users\\HappyMan20\\Desktop\\Year 3 sem 2\\DDAC\\cloud\\cloudass\\cloudass\\wwwroot\\images\\Braces2.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "363240"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"pz8YMGvrVfAVL1RXIAlUBbpuFrvMFJhzb8XfuASFFGo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 15 Apr 2025 21:48:51 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "35rpq09omu"
+        },
+        {
+          "Name": "label",
+          "Value": "images/Braces2.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-pz8YMGvrVfAVL1RXIAlUBbpuFrvMFJhzb8XfuASFFGo="
+        }
+      ]
+    },
+    {
+      "Route": "images/Braces2.jpg",
+      "AssetFile": "C:\\Users\\HappyMan20\\Desktop\\Year 3 sem 2\\DDAC\\cloud\\cloudass\\cloudass\\wwwroot\\images\\Braces2.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "363240"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"pz8YMGvrVfAVL1RXIAlUBbpuFrvMFJhzb8XfuASFFGo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 15 Apr 2025 21:48:51 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-pz8YMGvrVfAVL1RXIAlUBbpuFrvMFJhzb8XfuASFFGo="
         }
       ]
     },
@@ -1954,6 +2244,334 @@
         {
           "Name": "integrity",
           "Value": "sha256-9uvhnzpkv5j8w/nkrBpshuctFS0rSfTJ8hzaKClQ0SQ="
+        }
+      ]
+    },
+    {
+      "Route": "images/Teeth_Cleaning.jpg",
+      "AssetFile": "C:\\Users\\HappyMan20\\Desktop\\Year 3 sem 2\\DDAC\\cloud\\cloudass\\cloudass\\wwwroot\\images\\Teeth_Cleaning.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "25862"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"n/kNeJZ8r2jOffywQSq3nLz/FikImw4vhgk94FGGxdA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 15 Apr 2025 19:55:19 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-n/kNeJZ8r2jOffywQSq3nLz/FikImw4vhgk94FGGxdA="
+        }
+      ]
+    },
+    {
+      "Route": "images/Teeth_Cleaning.lbwvhs7p8a.jpg",
+      "AssetFile": "C:\\Users\\HappyMan20\\Desktop\\Year 3 sem 2\\DDAC\\cloud\\cloudass\\cloudass\\wwwroot\\images\\Teeth_Cleaning.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "25862"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"n/kNeJZ8r2jOffywQSq3nLz/FikImw4vhgk94FGGxdA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 15 Apr 2025 19:55:19 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "lbwvhs7p8a"
+        },
+        {
+          "Name": "label",
+          "Value": "images/Teeth_Cleaning.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-n/kNeJZ8r2jOffywQSq3nLz/FikImw4vhgk94FGGxdA="
+        }
+      ]
+    },
+    {
+      "Route": "images/Teeth_Cleaning2.i05dc30w5s.jpg",
+      "AssetFile": "C:\\Users\\HappyMan20\\Desktop\\Year 3 sem 2\\DDAC\\cloud\\cloudass\\cloudass\\wwwroot\\images\\Teeth_Cleaning2.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "96469"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Xi0W39ProFybLi9COCfvb9PzmRhE3m0r9KZle9El1cw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 15 Apr 2025 21:35:06 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "i05dc30w5s"
+        },
+        {
+          "Name": "label",
+          "Value": "images/Teeth_Cleaning2.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Xi0W39ProFybLi9COCfvb9PzmRhE3m0r9KZle9El1cw="
+        }
+      ]
+    },
+    {
+      "Route": "images/Teeth_Cleaning2.jpg",
+      "AssetFile": "C:\\Users\\HappyMan20\\Desktop\\Year 3 sem 2\\DDAC\\cloud\\cloudass\\cloudass\\wwwroot\\images\\Teeth_Cleaning2.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "96469"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Xi0W39ProFybLi9COCfvb9PzmRhE3m0r9KZle9El1cw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 15 Apr 2025 21:35:06 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Xi0W39ProFybLi9COCfvb9PzmRhE3m0r9KZle9El1cw="
+        }
+      ]
+    },
+    {
+      "Route": "images/Teeth_Filling.e9mi19oqen.jpg",
+      "AssetFile": "C:\\Users\\HappyMan20\\Desktop\\Year 3 sem 2\\DDAC\\cloud\\cloudass\\cloudass\\wwwroot\\images\\Teeth_Filling.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "71444"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"zlkjG+c2N2TVIubUtFTr5PB436Ds6Z88pMzQogTae7s=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 15 Apr 2025 19:58:59 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "e9mi19oqen"
+        },
+        {
+          "Name": "label",
+          "Value": "images/Teeth_Filling.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-zlkjG+c2N2TVIubUtFTr5PB436Ds6Z88pMzQogTae7s="
+        }
+      ]
+    },
+    {
+      "Route": "images/Teeth_Filling.jpg",
+      "AssetFile": "C:\\Users\\HappyMan20\\Desktop\\Year 3 sem 2\\DDAC\\cloud\\cloudass\\cloudass\\wwwroot\\images\\Teeth_Filling.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "71444"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"zlkjG+c2N2TVIubUtFTr5PB436Ds6Z88pMzQogTae7s=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 15 Apr 2025 19:58:59 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-zlkjG+c2N2TVIubUtFTr5PB436Ds6Z88pMzQogTae7s="
+        }
+      ]
+    },
+    {
+      "Route": "images/Tooth_Extraction.jpg",
+      "AssetFile": "C:\\Users\\HappyMan20\\Desktop\\Year 3 sem 2\\DDAC\\cloud\\cloudass\\cloudass\\wwwroot\\images\\Tooth_Extraction.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "106937"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"pa6m3uEwIn6rYirPxpHXIN9kTmDjFSBZV9vPwj51vEU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 15 Apr 2025 20:01:27 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-pa6m3uEwIn6rYirPxpHXIN9kTmDjFSBZV9vPwj51vEU="
+        }
+      ]
+    },
+    {
+      "Route": "images/Tooth_Extraction.ndz9a386o7.jpg",
+      "AssetFile": "C:\\Users\\HappyMan20\\Desktop\\Year 3 sem 2\\DDAC\\cloud\\cloudass\\cloudass\\wwwroot\\images\\Tooth_Extraction.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "106937"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"pa6m3uEwIn6rYirPxpHXIN9kTmDjFSBZV9vPwj51vEU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 15 Apr 2025 20:01:27 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ndz9a386o7"
+        },
+        {
+          "Name": "label",
+          "Value": "images/Tooth_Extraction.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-pa6m3uEwIn6rYirPxpHXIN9kTmDjFSBZV9vPwj51vEU="
         }
       ]
     },

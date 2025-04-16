@@ -18,7 +18,22 @@ namespace cloudass.Controllers
             return View();
         }
 
-        public IActionResult Privacy()
+        public IActionResult Teeth_cleaning()
+        {
+            return View();
+        }
+
+        public IActionResult Teeth_Bracing()
+        {
+            return View();
+        }
+
+        public IActionResult Tooth_Fillings()
+        {
+            return View();
+        }
+
+        public IActionResult Tooth_Extraction()
         {
             return View();
         }

@@ -1,8 +1,14 @@
 wwwroot\css\site.css
 wwwroot\favicon.ico
+wwwroot\images\Braces.jpg
+wwwroot\images\Braces2.jpg
 wwwroot\images\DenTeeth.jpg
 wwwroot\images\My_Appointment.jpg
 wwwroot\images\Our_Services.jpeg
+wwwroot\images\Teeth_Cleaning.jpg
+wwwroot\images\Teeth_Cleaning2.jpg
+wwwroot\images\Teeth_Filling.jpg
+wwwroot\images\Tooth_Extraction.jpg
 wwwroot\js\site.js
 wwwroot\lib\bootstrap\dist\css\bootstrap.css
 wwwroot\lib\bootstrap\dist\css\bootstrap.css.map
