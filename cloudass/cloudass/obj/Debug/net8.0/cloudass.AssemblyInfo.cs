@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("cloudass")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+64bf88846bd4155ca74a9fb436865b8f43d96a21")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+812bcce959ae10252ccc9a873a9d1325b90284af")]
 [assembly: System.Reflection.AssemblyProductAttribute("cloudass")]
 [assembly: System.Reflection.AssemblyTitleAttribute("cloudass")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

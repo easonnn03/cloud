@@ -1,0 +1,58 @@
+﻿@model cloudass.Models.Appointment2
+@{
+    Layout = "_Layout";
+}
+
+<title>@ViewData["Title"] Make Appointment</title>
+
+<div class="d-flex justify-content-center" style="min-height: 100vh; align-items: flex-start; padding-top: 4rem;">
+    <div class="border rounded shadow p-5 bg-white" style="max-width: 500px; width: 100%;">
+        <h2 class="fw-bold mb-4 text-center">Step 2: Verify OTP</h2>
+
+        <p class="text-center text-muted mb-4">
+            We've sent a 6-digit verification code to your phone number.
+        </p>
+
+        <form id="otpForm" asp-action="Appointment3">
+            <div class="mb-3">
+                <label asp-for="OTP" class="form-label">Enter OTP</label>
+                <input asp-for="OTP" type="text" maxlength="6" pattern="\d{6}" inputmode="numeric" class="form-control" placeholder="Enter the 6-digit code" required />
+                <span asp-validation-for="OTP" class="text-danger"></span>
+            </div>
+
+            <div class="mt-4 d-flex justify-content-center gap-3 flex-wrap">
+                <button type="submit" class="btn btn-primary" id="nextBtn" disabled>Next</button>
+                <a href="/Home/Appointment" class="btn btn-dark px-3">Back</a>
+            </div>
+
+            <div class="text-center mt-3">
+                <a href="#" id="resendOTP" class="text-decoration-none">Resend OTP</a>
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+    <script>
+        const otpInput = document.querySelector('input[name="OTP"]');
+        const otpForm = document.getElementById("otpForm");
+        const nextBtn = document.getElementById("nextBtn");
+
+        otpInput.addEventListener("input", function () {
+            // Only allow numbers
+            this.value = this.value.replace(/[^0-9]/g, '');
+            if (this.value.length === 6) {
+                nextBtn.disabled = false;
+            } else {
+                nextBtn.disabled = true;
+            }
+        });
+
+        // Optional: Resend OTP (not functional here, placeholder)
+        document.getElementById("resendOTP").addEventListener("click", function (e) {
+            e.preventDefault();
+            alert("OTP has been resent (mock).");
+        });
+    </script>
+}

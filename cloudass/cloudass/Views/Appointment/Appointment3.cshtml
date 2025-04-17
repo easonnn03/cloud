@@ -1,0 +1,92 @@
+﻿
+@{
+    Layout = "_Layout";
+}
+
+<title>@ViewData["Title"] Make Appointment</title>
+
+<div class="d-flex justify-content-center" style="min-height: 100vh; align-items: flex-start; padding-top: 4rem;">
+    <div class="border rounded shadow p-5 bg-white" style="max-width: 800px; width: 100%;">
+        <h2 class="fw-bold mb-4 text-center">Step 3: Select Time Slot</h2>
+
+        <form method="post" asp-action="Summary">
+            <div class="mb-3">
+                <label for="selectedMonth" class="form-label">Select Month</label>
+                <select class="form-select" id="selectedMonth">
+                    @for (int i = 0; i < 6; i++)
+                    {
+                        var month = DateTime.Now.AddMonths(i);
+                        <option value="@month.ToString("yyyy-MM")">@month.ToString("MMMM yyyy")</option>
+                    }
+                </select>
+            </div>
+
+            <div id="daySlotContainer">
+                <!-- JS will load available days and slots here -->
+            </div>
+
+            <div class="mt-4 d-flex justify-content-center gap-3 flex-wrap">
+                <button type="submit" class="btn btn-primary" id="confirmBtn" disabled>Confirm</button>
+                <a href="/Home/Appointment2" class="btn btn-dark">Back</a>
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        const operatingHours = {
+            start: 9,
+            end: 17,
+            lunchStart: 12,
+            lunchEnd: 13,
+            interval: 30
+        };
+
+        const container = document.getElementById("daySlotContainer");
+        const monthDropdown = document.getElementById("selectedMonth");
+        const confirmBtn = document.getElementById("confirmBtn");
+
+        monthDropdown.addEventListener("change", generateSlots);
+        window.addEventListener("load", generateSlots);
+
+        function generateSlots() {
+            const selectedMonth = monthDropdown.value;
+            const startDate = new Date(selectedMonth + "-01");
+            const endDate = new Date(startDate.getFullYear(), startDate.getMonth() + 1, 0);
+
+            container.innerHTML = "";
+
+            for (let d = new Date(startDate); d <= endDate; d.setDate(d.getDate() + 1)) {
+                const day = new Date(d);
+                const dayOfWeek = day.getDay();
+                if (dayOfWeek === 0 || dayOfWeek === 6) continue; // Skip Sat/Sun
+
+                const dayStr = day.toISOString().split('T')[0];
+
+                let section = `<div class="mb-3">
+                    <label class="fw-semibold">${day.toDateString()}</label>
+                    <div class="d-flex flex-wrap gap-2">`;
+
+                for (let hour = operatingHours.start; hour < operatingHours.end; hour++) {
+                    if (hour === operatingHours.lunchStart) continue;
+
+                    const time = `${hour.toString().padStart(2, '0')}:00`;
+                    const value = `${dayStr} ${time}`;
+                    section += `<label class="btn btn-outline-secondary">
+                                    <input type="radio" name="SelectedTime" value="${value}" class="btn-check"> ${time}
+                                </label>`;
+                }
+
+                section += "</div></div>";
+                container.innerHTML += section;
+            }
+
+            document.querySelectorAll('input[name="SelectedTime"]').forEach(btn => {
+                btn.addEventListener("change", () => {
+                    confirmBtn.disabled = false;
+                });
+            });
+        }
+    </script>
+}

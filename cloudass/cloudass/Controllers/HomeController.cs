@@ -18,30 +18,6 @@ namespace cloudass.Controllers
             return View();
         }
 
-        public IActionResult Teeth_cleaning()
-        {
-            return View();
-        }
-
-        public IActionResult Teeth_Bracing()
-        {
-            return View();
-        }
-
-        public IActionResult Tooth_Fillings()
-        {
-            return View();
-        }
-
-        public IActionResult Tooth_Extraction()
-        {
-            return View();
-        }
-
-        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-        public IActionResult Error()
-        {
-            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
-        }
+        
     }
 }
