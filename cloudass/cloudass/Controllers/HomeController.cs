@@ -22,9 +22,6 @@
 //Action parameters (way for action to get input)
 //can be from URL, query and form submission
 
-
-
-
 using System.Diagnostics;
 using cloudass.Models;
 using Microsoft.AspNetCore.Mvc;

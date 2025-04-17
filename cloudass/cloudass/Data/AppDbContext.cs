@@ -11,14 +11,15 @@ LINQ instead of raw SQL
 
 namespace cloudass.Data;
 
-public class cloudassContext : IdentityDbContext<User>
+public class AppDbContext : IdentityDbContext<User>
 {
-    public cloudassContext(DbContextOptions<cloudassContext> options)
+    public AppDbContext(DbContextOptions<AppDbContext> options)
         : base(options)
     {
     }
 
     public DbSet<Appointment> Appointments { get; set; }
+
     protected override void OnModelCreating(ModelBuilder builder)
     {
         base.OnModelCreating(builder);

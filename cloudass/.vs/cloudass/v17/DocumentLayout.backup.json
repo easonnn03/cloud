@@ -3,92 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\Asus\\Desktop\\cloud\\cloudass\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{43D2A9D1-EE6E-424D-9A41-869649703607}|cloudass\\cloudass.csproj|c:\\users\\asus\\desktop\\cloud\\cloudass\\cloudass\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{43D2A9D1-EE6E-424D-9A41-869649703607}|cloudass\\cloudass.csproj|solutionrelative:cloudass\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{43D2A9D1-EE6E-424D-9A41-869649703607}|cloudass\\cloudass.csproj|c:\\users\\asus\\desktop\\cloud\\cloudass\\cloudass\\data\\cloudasscontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{43D2A9D1-EE6E-424D-9A41-869649703607}|cloudass\\cloudass.csproj|solutionrelative:cloudass\\data\\cloudasscontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{43D2A9D1-EE6E-424D-9A41-869649703607}|cloudass\\cloudass.csproj|c:\\users\\asus\\desktop\\cloud\\cloudass\\cloudass\\areas\\identity\\pages\\account\\register.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{43D2A9D1-EE6E-424D-9A41-869649703607}|cloudass\\cloudass.csproj|solutionrelative:cloudass\\areas\\identity\\pages\\account\\register.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{43D2A9D1-EE6E-424D-9A41-869649703607}|cloudass\\cloudass.csproj|c:\\users\\asus\\desktop\\cloud\\cloudass\\cloudass\\areas\\identity\\pages\\account\\login.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{43D2A9D1-EE6E-424D-9A41-869649703607}|cloudass\\cloudass.csproj|solutionrelative:cloudass\\areas\\identity\\pages\\account\\login.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{43D2A9D1-EE6E-424D-9A41-869649703607}|cloudass\\cloudass.csproj|c:\\users\\asus\\desktop\\cloud\\cloudass\\cloudass\\areas\\identity\\pages\\account\\manage\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{43D2A9D1-EE6E-424D-9A41-869649703607}|cloudass\\cloudass.csproj|solutionrelative:cloudass\\areas\\identity\\pages\\account\\manage\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{43D2A9D1-EE6E-424D-9A41-869649703607}|cloudass\\cloudass.csproj|c:\\users\\asus\\desktop\\cloud\\cloudass\\cloudass\\areas\\identity\\pages\\account\\manage\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{43D2A9D1-EE6E-424D-9A41-869649703607}|cloudass\\cloudass.csproj|solutionrelative:cloudass\\areas\\identity\\pages\\account\\manage\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{43D2A9D1-EE6E-424D-9A41-869649703607}|cloudass\\cloudass.csproj|c:\\users\\asus\\desktop\\cloud\\cloudass\\cloudass\\areas\\identity\\pages\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{43D2A9D1-EE6E-424D-9A41-869649703607}|cloudass\\cloudass.csproj|solutionrelative:cloudass\\areas\\identity\\pages\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{43D2A9D1-EE6E-424D-9A41-869649703607}|cloudass\\cloudass.csproj|c:\\users\\asus\\desktop\\cloud\\cloudass\\cloudass\\areas\\identity\\pages\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{43D2A9D1-EE6E-424D-9A41-869649703607}|cloudass\\cloudass.csproj|solutionrelative:cloudass\\areas\\identity\\pages\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{43D2A9D1-EE6E-424D-9A41-869649703607}|cloudass\\cloudass.csproj|c:\\users\\asus\\desktop\\cloud\\cloudass\\cloudass\\areas\\identity\\pages\\account\\manage\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{43D2A9D1-EE6E-424D-9A41-869649703607}|cloudass\\cloudass.csproj|solutionrelative:cloudass\\areas\\identity\\pages\\account\\manage\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{43D2A9D1-EE6E-424D-9A41-869649703607}|cloudass\\cloudass.csproj|c:\\users\\asus\\desktop\\cloud\\cloudass\\cloudass\\areas\\identity\\pages\\account\\manage\\_managenav.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{43D2A9D1-EE6E-424D-9A41-869649703607}|cloudass\\cloudass.csproj|solutionrelative:cloudass\\areas\\identity\\pages\\account\\manage\\_managenav.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{43D2A9D1-EE6E-424D-9A41-869649703607}|cloudass\\cloudass.csproj|c:\\users\\asus\\desktop\\cloud\\cloudass\\cloudass\\data\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{43D2A9D1-EE6E-424D-9A41-869649703607}|cloudass\\cloudass.csproj|solutionrelative:cloudass\\data\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{43D2A9D1-EE6E-424D-9A41-869649703607}|cloudass\\cloudass.csproj|c:\\users\\asus\\desktop\\cloud\\cloudass\\cloudass\\cloudass.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{43D2A9D1-EE6E-424D-9A41-869649703607}|cloudass\\cloudass.csproj|solutionrelative:cloudass\\cloudass.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{43D2A9D1-EE6E-424D-9A41-869649703607}|cloudass\\cloudass.csproj|c:\\users\\asus\\desktop\\cloud\\cloudass\\cloudass\\models\\patient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{43D2A9D1-EE6E-424D-9A41-869649703607}|cloudass\\cloudass.csproj|solutionrelative:cloudass\\models\\patient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{43D2A9D1-EE6E-424D-9A41-869649703607}|cloudass\\cloudass.csproj|c:\\users\\asus\\desktop\\cloud\\cloudass\\cloudass\\controllers\\appointmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{43D2A9D1-EE6E-424D-9A41-869649703607}|cloudass\\cloudass.csproj|solutionrelative:cloudass\\controllers\\appointmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{43D2A9D1-EE6E-424D-9A41-869649703607}|cloudass\\cloudass.csproj|c:\\users\\asus\\desktop\\cloud\\cloudass\\cloudass\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{43D2A9D1-EE6E-424D-9A41-869649703607}|cloudass\\cloudass.csproj|solutionrelative:cloudass\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{43D2A9D1-EE6E-424D-9A41-869649703607}|cloudass\\cloudass.csproj|c:\\users\\asus\\desktop\\cloud\\cloudass\\cloudass\\models\\service.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{43D2A9D1-EE6E-424D-9A41-869649703607}|cloudass\\cloudass.csproj|solutionrelative:cloudass\\models\\service.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{43D2A9D1-EE6E-424D-9A41-869649703607}|cloudass\\cloudass.csproj|c:\\users\\asus\\desktop\\cloud\\cloudass\\cloudass\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{43D2A9D1-EE6E-424D-9A41-869649703607}|cloudass\\cloudass.csproj|solutionrelative:cloudass\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{43D2A9D1-EE6E-424D-9A41-869649703607}|cloudass\\cloudass.csproj|c:\\users\\asus\\desktop\\cloud\\cloudass\\cloudass\\models\\appointmentdetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{43D2A9D1-EE6E-424D-9A41-869649703607}|cloudass\\cloudass.csproj|solutionrelative:cloudass\\models\\appointmentdetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{43D2A9D1-EE6E-424D-9A41-869649703607}|cloudass\\cloudass.csproj|c:\\users\\asus\\desktop\\cloud\\cloudass\\cloudass\\models\\appointment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{43D2A9D1-EE6E-424D-9A41-869649703607}|cloudass\\cloudass.csproj|solutionrelative:cloudass\\models\\appointment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{43D2A9D1-EE6E-424D-9A41-869649703607}|cloudass\\cloudass.csproj|c:\\users\\asus\\desktop\\cloud\\cloudass\\cloudass\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{43D2A9D1-EE6E-424D-9A41-869649703607}|cloudass\\cloudass.csproj|solutionrelative:cloudass\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{43D2A9D1-EE6E-424D-9A41-869649703607}|cloudass\\cloudass.csproj|c:\\users\\asus\\desktop\\cloud\\cloudass\\cloudass\\controllers\\appointmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{43D2A9D1-EE6E-424D-9A41-869649703607}|cloudass\\cloudass.csproj|solutionrelative:cloudass\\controllers\\appointmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{43D2A9D1-EE6E-424D-9A41-869649703607}|cloudass\\cloudass.csproj|c:\\users\\asus\\desktop\\cloud\\cloudass\\cloudass\\views\\dentistappointment\\dentistappointment.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{43D2A9D1-EE6E-424D-9A41-869649703607}|cloudass\\cloudass.csproj|solutionrelative:cloudass\\views\\dentistappointment\\dentistappointment.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{43D2A9D1-EE6E-424D-9A41-869649703607}|cloudass\\cloudass.csproj|c:\\users\\asus\\desktop\\cloud\\cloudass\\cloudass\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{43D2A9D1-EE6E-424D-9A41-869649703607}|cloudass\\cloudass.csproj|solutionrelative:cloudass\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{43D2A9D1-EE6E-424D-9A41-869649703607}|cloudass\\cloudass.csproj|c:\\users\\asus\\desktop\\cloud\\cloudass\\cloudass\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{43D2A9D1-EE6E-424D-9A41-869649703607}|cloudass\\cloudass.csproj|solutionrelative:cloudass\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{43D2A9D1-EE6E-424D-9A41-869649703607}|cloudass\\cloudass.csproj|c:\\users\\asus\\desktop\\cloud\\cloudass\\cloudass\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{43D2A9D1-EE6E-424D-9A41-869649703607}|cloudass\\cloudass.csproj|solutionrelative:cloudass\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -98,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -106,288 +38,67 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\cloud\\cloudass\\cloudass\\Program.cs",
-              "RelativeDocumentMoniker": "cloudass\\Program.cs",
-              "ToolTip": "C:\\Users\\Asus\\Desktop\\cloud\\cloudass\\cloudass\\Program.cs",
-              "RelativeToolTip": "cloudass\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "AppointmentDetails.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\cloud\\cloudass\\cloudass\\Models\\AppointmentDetails.cs",
+              "RelativeDocumentMoniker": "cloudass\\Models\\AppointmentDetails.cs",
+              "ToolTip": "C:\\Users\\Asus\\Desktop\\cloud\\cloudass\\cloudass\\Models\\AppointmentDetails.cs*",
+              "RelativeToolTip": "cloudass\\Models\\AppointmentDetails.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-15T09:07:33.51Z",
+              "WhenOpened": "2025-04-16T11:25:07.899Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Register.cshtml.cs",
-              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\cloud\\cloudass\\cloudass\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
-              "RelativeDocumentMoniker": "cloudass\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
-              "ToolTip": "C:\\Users\\Asus\\Desktop\\cloud\\cloudass\\cloudass\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
-              "RelativeToolTip": "cloudass\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
+              "Title": "Appointment.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\cloud\\cloudass\\cloudass\\Models\\Appointment.cs",
+              "RelativeDocumentMoniker": "cloudass\\Models\\Appointment.cs",
+              "ToolTip": "C:\\Users\\Asus\\Desktop\\cloud\\cloudass\\cloudass\\Models\\Appointment.cs",
+              "RelativeToolTip": "cloudass\\Models\\Appointment.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-15T10:12:31.76Z",
+              "WhenOpened": "2025-04-16T08:36:52.612Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Service.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\cloud\\cloudass\\cloudass\\Models\\Service.cs",
+              "RelativeDocumentMoniker": "cloudass\\Models\\Service.cs",
+              "ToolTip": "C:\\Users\\Asus\\Desktop\\cloud\\cloudass\\cloudass\\Models\\Service.cs",
+              "RelativeToolTip": "cloudass\\Models\\Service.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAxwAYAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-16T11:13:41.47Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "Login.cshtml.cs",
-              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\cloud\\cloudass\\cloudass\\Areas\\Identity\\Pages\\Account\\Login.cshtml.cs",
-              "RelativeDocumentMoniker": "cloudass\\Areas\\Identity\\Pages\\Account\\Login.cshtml.cs",
-              "ToolTip": "C:\\Users\\Asus\\Desktop\\cloud\\cloudass\\cloudass\\Areas\\Identity\\Pages\\Account\\Login.cshtml.cs",
-              "RelativeToolTip": "cloudass\\Areas\\Identity\\Pages\\Account\\Login.cshtml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-15T10:05:06.45Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Index.cshtml.cs",
-              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\cloud\\cloudass\\cloudass\\Areas\\Identity\\Pages\\Account\\Manage\\Index.cshtml.cs",
-              "RelativeDocumentMoniker": "cloudass\\Areas\\Identity\\Pages\\Account\\Manage\\Index.cshtml.cs",
-              "ToolTip": "C:\\Users\\Asus\\Desktop\\cloud\\cloudass\\cloudass\\Areas\\Identity\\Pages\\Account\\Manage\\Index.cshtml.cs",
-              "RelativeToolTip": "cloudass\\Areas\\Identity\\Pages\\Account\\Manage\\Index.cshtml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-15T10:05:01.919Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "cloudassContext.cs",
-              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\cloud\\cloudass\\cloudass\\Data\\cloudassContext.cs",
-              "RelativeDocumentMoniker": "cloudass\\Data\\cloudassContext.cs",
-              "ToolTip": "C:\\Users\\Asus\\Desktop\\cloud\\cloudass\\cloudass\\Data\\cloudassContext.cs",
-              "RelativeToolTip": "cloudass\\Data\\cloudassContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAA4AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-15T10:00:44.619Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\cloud\\cloudass\\cloudass\\Areas\\Identity\\Pages\\Account\\Manage\\Index.cshtml",
-              "RelativeDocumentMoniker": "cloudass\\Areas\\Identity\\Pages\\Account\\Manage\\Index.cshtml",
-              "ToolTip": "C:\\Users\\Asus\\Desktop\\cloud\\cloudass\\cloudass\\Areas\\Identity\\Pages\\Account\\Manage\\Index.cshtml",
-              "RelativeToolTip": "cloudass\\Areas\\Identity\\Pages\\Account\\Manage\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-15T10:03:02.325Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Register.cshtml",
-              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\cloud\\cloudass\\cloudass\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
-              "RelativeDocumentMoniker": "cloudass\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
-              "ToolTip": "C:\\Users\\Asus\\Desktop\\cloud\\cloudass\\cloudass\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
-              "RelativeToolTip": "cloudass\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-15T10:03:46.493Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Login.cshtml",
-              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\cloud\\cloudass\\cloudass\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
-              "RelativeDocumentMoniker": "cloudass\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
-              "ToolTip": "C:\\Users\\Asus\\Desktop\\cloud\\cloudass\\cloudass\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
-              "RelativeToolTip": "cloudass\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
-              "ViewState": "AgIAABMAAAAAAAAAAAAqwCgAAABuAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-14T11:55:24.327Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "_ViewImports.cshtml",
-              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\cloud\\cloudass\\cloudass\\Areas\\Identity\\Pages\\Account\\Manage\\_ViewImports.cshtml",
-              "RelativeDocumentMoniker": "cloudass\\Areas\\Identity\\Pages\\Account\\Manage\\_ViewImports.cshtml",
-              "ToolTip": "C:\\Users\\Asus\\Desktop\\cloud\\cloudass\\cloudass\\Areas\\Identity\\Pages\\Account\\Manage\\_ViewImports.cshtml",
-              "RelativeToolTip": "cloudass\\Areas\\Identity\\Pages\\Account\\Manage\\_ViewImports.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-15T10:03:00.277Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "_ManageNav.cshtml",
-              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\cloud\\cloudass\\cloudass\\Areas\\Identity\\Pages\\Account\\Manage\\_ManageNav.cshtml",
-              "RelativeDocumentMoniker": "cloudass\\Areas\\Identity\\Pages\\Account\\Manage\\_ManageNav.cshtml",
-              "ToolTip": "C:\\Users\\Asus\\Desktop\\cloud\\cloudass\\cloudass\\Areas\\Identity\\Pages\\Account\\Manage\\_ManageNav.cshtml",
-              "RelativeToolTip": "cloudass\\Areas\\Identity\\Pages\\Account\\Manage\\_ManageNav.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-15T10:02:58.326Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "User.cs",
-              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\cloud\\cloudass\\cloudass\\Data\\User.cs",
-              "RelativeDocumentMoniker": "cloudass\\Data\\User.cs",
-              "ToolTip": "C:\\Users\\Asus\\Desktop\\cloud\\cloudass\\cloudass\\Data\\User.cs",
-              "RelativeToolTip": "cloudass\\Data\\User.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-15T10:00:36.015Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "cloudass",
-              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\cloud\\cloudass\\cloudass\\cloudass.csproj",
-              "RelativeDocumentMoniker": "cloudass\\cloudass.csproj",
-              "ToolTip": "C:\\Users\\Asus\\Desktop\\cloud\\cloudass\\cloudass\\cloudass.csproj*",
-              "RelativeToolTip": "cloudass\\cloudass.csproj*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAABVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-04-15T08:51:14.123Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
               "Title": "AppointmentController.cs",
               "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\cloud\\cloudass\\cloudass\\Controllers\\AppointmentController.cs",
               "RelativeDocumentMoniker": "cloudass\\Controllers\\AppointmentController.cs",
-              "ToolTip": "C:\\Users\\Asus\\Desktop\\cloud\\cloudass\\cloudass\\Controllers\\AppointmentController.cs",
-              "RelativeToolTip": "cloudass\\Controllers\\AppointmentController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAZAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\Asus\\Desktop\\cloud\\cloudass\\cloudass\\Controllers\\AppointmentController.cs*",
+              "RelativeToolTip": "cloudass\\Controllers\\AppointmentController.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-15T08:44:27.097Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "Patient.cs",
-              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\cloud\\cloudass\\cloudass\\Models\\Patient.cs",
-              "RelativeDocumentMoniker": "cloudass\\Models\\Patient.cs",
-              "ToolTip": "C:\\Users\\Asus\\Desktop\\cloud\\cloudass\\cloudass\\Models\\Patient.cs",
-              "RelativeToolTip": "cloudass\\Models\\Patient.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-14T12:14:20.191Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "HomeController.cs",
-              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\cloud\\cloudass\\cloudass\\Controllers\\HomeController.cs",
-              "RelativeDocumentMoniker": "cloudass\\Controllers\\HomeController.cs",
-              "ToolTip": "C:\\Users\\Asus\\Desktop\\cloud\\cloudass\\cloudass\\Controllers\\HomeController.cs",
-              "RelativeToolTip": "cloudass\\Controllers\\HomeController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-15T08:41:19.19Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "ErrorViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\cloud\\cloudass\\cloudass\\Models\\ErrorViewModel.cs",
-              "RelativeDocumentMoniker": "cloudass\\Models\\ErrorViewModel.cs",
-              "ToolTip": "C:\\Users\\Asus\\Desktop\\cloud\\cloudass\\cloudass\\Models\\ErrorViewModel.cs",
-              "RelativeToolTip": "cloudass\\Models\\ErrorViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-14T12:06:17.531Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "Appointment.cs",
-              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\cloud\\cloudass\\cloudass\\Models\\Appointment.cs",
-              "RelativeDocumentMoniker": "cloudass\\Models\\Appointment.cs",
-              "ToolTip": "C:\\Users\\Asus\\Desktop\\cloud\\cloudass\\cloudass\\Models\\Appointment.cs",
-              "RelativeToolTip": "cloudass\\Models\\Appointment.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAuAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-14T12:06:53.687Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "Service.cs",
-              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\cloud\\cloudass\\cloudass\\Models\\Service.cs",
-              "RelativeDocumentMoniker": "cloudass\\Models\\Service.cs",
-              "ToolTip": "C:\\Users\\Asus\\Desktop\\cloud\\cloudass\\cloudass\\Models\\Service.cs",
-              "RelativeToolTip": "cloudass\\Models\\Service.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAPAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-14T13:37:53.494Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "User.cs",
-              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\cloud\\cloudass\\cloudass\\Models\\User.cs",
-              "RelativeDocumentMoniker": "cloudass\\Models\\User.cs",
-              "ToolTip": "C:\\Users\\Asus\\Desktop\\cloud\\cloudass\\cloudass\\Models\\User.cs",
-              "RelativeToolTip": "cloudass\\Models\\User.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-14T12:05:00.129Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "Privacy.cshtml",
-              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\cloud\\cloudass\\cloudass\\Views\\Home\\Privacy.cshtml",
-              "RelativeDocumentMoniker": "cloudass\\Views\\Home\\Privacy.cshtml",
-              "ToolTip": "C:\\Users\\Asus\\Desktop\\cloud\\cloudass\\cloudass\\Views\\Home\\Privacy.cshtml",
-              "RelativeToolTip": "cloudass\\Views\\Home\\Privacy.cshtml",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\cloud\\cloudass\\cloudass\\Program.cs",
+              "RelativeDocumentMoniker": "cloudass\\Program.cs",
+              "ToolTip": "C:\\Users\\Asus\\Desktop\\cloud\\cloudass\\cloudass\\Program.cs",
+              "RelativeToolTip": "cloudass\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-14T11:57:55.863Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\cloud\\cloudass\\cloudass\\Views\\Home\\Index.cshtml",
-              "RelativeDocumentMoniker": "cloudass\\Views\\Home\\Index.cshtml",
-              "ToolTip": "C:\\Users\\Asus\\Desktop\\cloud\\cloudass\\cloudass\\Views\\Home\\Index.cshtml",
-              "RelativeToolTip": "cloudass\\Views\\Home\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-14T11:57:05.144Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "DentistAppointment.cshtml",
-              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\cloud\\cloudass\\cloudass\\Views\\DentistAppointment\\DentistAppointment.cshtml",
-              "RelativeDocumentMoniker": "cloudass\\Views\\DentistAppointment\\DentistAppointment.cshtml",
-              "ToolTip": "C:\\Users\\Asus\\Desktop\\cloud\\cloudass\\cloudass\\Views\\DentistAppointment\\DentistAppointment.cshtml",
-              "RelativeToolTip": "cloudass\\Views\\DentistAppointment\\DentistAppointment.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-14T11:54:28.469Z",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-16T08:12:23.844Z",
               "EditorCaption": ""
             }
           ]
