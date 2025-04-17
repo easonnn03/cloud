@@ -1,12 +1,16 @@
 //Entry Point 
 //Boostrap application
 //configure services and middleware 
+using System.Globalization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using cloudass.Data;
 using System;
 using cloudass.Repository;
 using cloudass.Services;
+
+CultureInfo.DefaultThreadCurrentCulture = new CultureInfo("en-US");
+CultureInfo.DefaultThreadCurrentUICulture = new CultureInfo("en-US");
 
 var builder = WebApplication.CreateBuilder(args);
 

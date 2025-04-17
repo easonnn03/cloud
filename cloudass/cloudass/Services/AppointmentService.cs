@@ -1,6 +1,9 @@
-﻿using cloudass.Models;
+﻿using cloudass.Models.DbTable;
+using cloudass.Models;
 using cloudass.Repository;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+
 namespace cloudass.Services
 {
     public class AppointmentService : IAppointmentService
@@ -13,13 +16,28 @@ namespace cloudass.Services
         }
 
         //Xuen Part
-        public async Task<Appointment?> GetAppointmentByIdAsync(int AppointmentId)
+        public async Task<AppointmentDetails?> GetAppointmentDetailsByIdAsync(int AppointmentId)
         {
-            return await _appointmentRepository.GetAppointmentByIdAsync(AppointmentId);
+            return await _appointmentRepository.GetAppointmentDetailsByIdAsync(AppointmentId);
         }
 
+        public async Task<bool> AppointmentExistsAsync(int id)
+        {
+            return await _appointmentRepository.CheckAppointmentExistsByIdAsync(id);
+        }
+
+        public async Task<bool> CancelAppointmentAsync(int id)
+        {
+            var updated = await _appointmentRepository.DeleteAsync(id);
+            if (!updated)
+                return false;
+
+            await _appointmentRepository.SaveChangesAsync();
+            return true;
+        }
 
         //JJ Part
+        /*
         public Appointment GetAppointment(string id)
         {
             return null;
@@ -42,6 +60,7 @@ namespace cloudass.Services
         {
             Console.WriteLine("Successful Update");
         }
+        */
 
     }
 }

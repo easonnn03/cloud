@@ -1,4 +1,6 @@
-﻿<title>@ViewData["Title"] DenTeeth</title>
+﻿@{
+    ViewData["Title"] = "DenTeeth";
+}
 
 <div class="hero-image text-white text-center d-flex align-items-center justify-content-center">
     <div class="hero-text">
@@ -22,7 +24,7 @@
 
     <!-- My Appointment -->
     <div class="col-md-6 mb-4">
-        <a href="#My_Appointment" class="text-decoration-none">
+        <a href="/Appointment/SearchAppointment" class="text-decoration-none">
             <div class="image-card position-relative overflow-hidden rounded">
                 <img src="/images/My_Appointment.jpg" class="w-100 h-100 object-fit-cover" alt="My Appointment">
                 <div class="image-overlay d-flex align-items-center justify-content-center">

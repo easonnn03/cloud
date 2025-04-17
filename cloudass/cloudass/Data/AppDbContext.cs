@@ -1,4 +1,4 @@
-﻿using cloudass.Models;
+﻿using cloudass.Models.DbTable;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
@@ -19,6 +19,9 @@ public class AppDbContext : IdentityDbContext<User>
     }
 
     public DbSet<Appointment> Appointments { get; set; }
+    public DbSet<Patient> Patients { get; set; }
+    public DbSet<AppointmentService> AppointmentServices { get; set; }
+
 
     protected override void OnModelCreating(ModelBuilder builder)
     {

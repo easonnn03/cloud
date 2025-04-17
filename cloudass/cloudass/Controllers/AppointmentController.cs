@@ -2,9 +2,8 @@
 using Microsoft.EntityFrameworkCore;
 using cloudass.Models;
 using cloudass.Services;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
+using cloudass.Models.DbTable;
 
 namespace cloudass.Controllers
 {
@@ -17,25 +16,51 @@ namespace cloudass.Controllers
             _appointmentService = appointmentService;
         }
 
-        //Retrieve Appointment Details 
+
+        //Xuen Part
         [HttpGet]
-        public async Task<IActionResult> InputId(int AppointmentId)
-        {
-            var appointment = await _appointmentService.GetAppointmentByIdAsync(AppointmentId);
-
-            if (appointment == null)
-            {
-                return NotFound();
-            }
-
-            return View("AppointmentDetails", appointment);
-        }
-
-        [HttpPost]
-        public IActionResult View()
+        public IActionResult SearchAppointment()
         {
             return View();
         }
+
+        //Retrieve Appointment Details 
+        [HttpPost]
+        public async Task<IActionResult> SearchAppointment(int AppointmentId)
+        {
+            bool appointmentExists = await _appointmentService.AppointmentExistsAsync(AppointmentId);
+                
+            if (appointmentExists == false)
+            {
+                ViewBag.Error = "Appointment not found.";
+                return View();
+            }
+            
+            return RedirectToAction("AppointmentInfo", new { id = AppointmentId });
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> AppointmentInfo(int id)
+        {
+            var appointmentDetail = await _appointmentService.GetAppointmentDetailsByIdAsync(id);
+            if (appointmentDetail == null)
+            {
+                return View("NotFound");
+            }
+            return View(appointmentDetail);
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> DeleteAppointment(int id)
+        {
+            bool result = await _appointmentService.CancelAppointmentAsync(id);
+
+            ViewBag.IsSuccess = result;
+            return View("AppointmentCancellationResult");
+        }
+
+
+
 
 
         //Chong Heng Part
@@ -95,6 +120,5 @@ namespace cloudass.Controllers
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
-
     }
 }

@@ -1,7 +1,10 @@
-﻿namespace cloudass.Models
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace cloudass.Models.DbTable
 {
     public class Appointment
     {
+        [Key]
         public int Id { get; set; }
         public int PatientId { get; set; }
         public DateTime StartTime { get; set; }

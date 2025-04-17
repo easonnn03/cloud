@@ -1,0 +1,64 @@
+﻿@{
+    ViewData["Title"] = "Check Your Appointment";
+}
+
+<style>
+    input[type=number]::-webkit-inner-spin-button,
+    input[type=number]::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+
+    input[type=number] {
+        -moz-appearance: textfield;
+    }
+
+    .form-wrapper {
+        max-width: 450px;
+    }
+</style>
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-6 form-wrapper">
+
+            <div class="card shadow-lg border-0 rounded-4">
+                <div class="card-body p-5">
+
+                    <!-- Header -->
+                    <h2 class="text-center mb-4 text-primary fw-bold">Check Appointment</h2>
+                    <p class="text-center text-muted mb-4">Enter your appointment ID to view your details.</p>
+
+                    <!-- Error Message -->
+                    @if (ViewBag.Error != null)
+                    {
+                        <div class="alert alert-danger text-center rounded-3 shadow-sm" role="alert">
+                            @ViewBag.Error
+                        </div>
+                    }
+
+                    <!-- Form -->
+                    <form asp-action="SearchAppointment" method="post">
+                        <div class="mb-4">
+                            <label for="AppointmentId" class="form-label">Appointment ID</label>
+                            <input type="number" class="form-control form-control-lg rounded-3 shadow-sm" id="AppointmentId" name="AppointmentId" required placeholder="e.g. 101" />
+                        </div>
+
+                        <div class="d-grid">
+                            <button type="submit" class="btn btn-primary btn-lg rounded-3 shadow-sm">Search</button>
+                        </div>
+                    </form>
+
+                    <!-- Back to Home -->
+                    <div class="text-center mt-4">
+                        <a href="@Url.Action("Index", "Home")" class="btn btn-outline-secondary btn-sm rounded-pill px-4 shadow-sm">
+                            ← Back to Home
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>

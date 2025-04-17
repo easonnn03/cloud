@@ -1,0 +1,61 @@
+﻿@{
+    ViewData["Title"] = "Appointment Cancellation";
+    bool isSuccess = ViewBag.IsSuccess == true;
+    string redirectUrl = isSuccess 
+        ? Url.Action("SearchAppointment", "Appointment") ?? "/"
+        : Url.Action("Index", "Home") ?? "/";
+}
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-8 text-center">
+
+            <div class="card shadow-lg border-0 rounded-4 p-5">
+                <div class="mb-4">
+                    @if (isSuccess)
+                    {
+                        <i class="bi bi-check-circle-fill text-success" style="font-size: 4rem;"></i>
+                    }
+                    else
+                    {
+                        <i class="bi bi-x-circle-fill text-danger" style="font-size: 4rem;"></i>
+                    }
+                </div>
+
+                <h2 class="fw-bold mb-3 @(isSuccess ? "text-success" : "text-danger")">
+                    @(isSuccess ? "Appointment Cancelled" : "Cancellation Failed")
+                </h2>
+
+                <p class="text-muted fs-5 mb-4">
+                    @(isSuccess
+                        ? "Your appointment was successfully cancelled."
+                        : "The appointment could not be cancelled. It may already be cancelled, missed, or completed.")
+                </p>
+
+                <p class="text-secondary">
+                    You will be redirected in <span id="countdown">10</span> seconds...
+                </p>
+
+                <a href="@redirectUrl" class="btn @(isSuccess ? "btn-outline-primary" : "btn-outline-danger") btn-lg rounded-pill px-4 mt-3">
+                    ← Back
+                </a>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<script>
+    let seconds = 10;
+    const countdown = document.getElementById('countdown');
+    const redirectUrl = '@redirectUrl';
+
+    const timer = setInterval(() => {
+        seconds--;
+        countdown.innerText = seconds;
+        if (seconds <= 0) {
+            clearInterval(timer);
+            window.location.href = redirectUrl;
+        }
+    }, 1000);
+</script>
