@@ -1,4 +1,6 @@
-﻿<div class="hero-image text-white text-center d-flex align-items-center justify-content-center">
+﻿<title>@ViewData["Title"] DenTeeth</title>
+
+<div class="hero-image text-white text-center d-flex align-items-center justify-content-center">
     <div class="hero-text">
         <h1 class="display-4 fw-bold">Welcome to DenTeeth</h1>
         <p class="lead">Caring for your smile, one appointment at a time</p>
@@ -8,21 +10,94 @@
 <div class="row text-center my-5">
     <!-- Our Service -->
     <div class="col-md-6 mb-4">
-        <div class="image-card position-relative overflow-hidden rounded">
-            <img src="/images/Our_Services.jpeg" class="w-100 h-100 object-fit-cover" alt="Our Service">
-            <div class="image-overlay d-flex align-items-center justify-content-center">
-                <h3 class="text-white fw-bold">Our Service</h3>
+        <a href="#Our_Service" class="text-decoration-none">
+            <div class="image-card position-relative overflow-hidden rounded">
+                <img src="/images/Our_Services.jpeg" class="w-100 h-100 object-fit-cover" alt="Our Service">
+                <div class="image-overlay d-flex align-items-center justify-content-center">
+                    <h3 class="text-white fw-bold">Our Service</h3>
+                </div>
             </div>
-        </div>
+        </a>
     </div>
 
     <!-- My Appointment -->
     <div class="col-md-6 mb-4">
-        <div class="image-card position-relative overflow-hidden rounded">
-            <img src="/images/My_Appointment.jpg" class="w-100 h-100 object-fit-cover" alt="My Appointment">
-            <div class="image-overlay d-flex align-items-center justify-content-center">
-                <h3 class="text-white fw-bold">My Appointment</h3>
+        <a href="#My_Appointment" class="text-decoration-none">
+            <div class="image-card position-relative overflow-hidden rounded">
+                <img src="/images/My_Appointment.jpg" class="w-100 h-100 object-fit-cover" alt="My Appointment">
+                <div class="image-overlay d-flex align-items-center justify-content-center">
+                    <h3 class="text-white fw-bold">My Appointment</h3>
+                </div>
+            </div>
+        </a>
+    </div>
+</div>
+
+<div id="Our_Service" class="container my-5">
+    <h2 class="fw-bold">Our Service</h2>
+
+    <div class="list-group">
+        <!-- Card 1 -->
+        <div class="list-group-item py-4">
+            <div class="row g-3 align-items-center">
+                <div class="col-md-2 text-center">
+                    <img src="/images/Teeth_Cleaning.jpg" class="img-fluid rounded" alt="">
+                </div>
+                <div class="col-md-10">
+                    <h5 class="fw-bold">Teeth Cleaning</h5>
+                    <p class="mb-2 text-muted">Body text for whatever you'd like to say. Add main takeaway points, quotes, anecdotes, or even a very very short story.</p>
+                    <a href="/Services/Teeth_Cleaning" class="btn btn-outline-dark">More Info...</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="list-group-item py-4">
+            <div class="row g-3 align-items-center">
+                <div class="col-md-2 text-center">
+                    <img src="/images/Braces.jpg" class="img-fluid rounded" alt="">
+                </div>
+                <div class="col-md-10">
+                    <h5 class="fw-bold">Braces</h5>
+                    <p class="mb-2 text-muted">Body text for whatever you'd like to say. Add main takeaway points, quotes, anecdotes, or even a very very short story.</p>
+                    <a href="/Services/Teeth_Bracing" class="btn btn-outline-dark">More Info...</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="list-group-item py-4">
+            <div class="row g-3 align-items-center">
+                <div class="col-md-2 text-center">
+                    <img src="/images/Teeth_Filling.jpg" class="img-fluid rounded" alt="">
+                </div>
+                <div class="col-md-10">
+                    <h5 class="fw-bold">Fillings</h5>
+                    <p class="mb-2 text-muted">Body text for whatever you'd like to say. Add main takeaway points, quotes, anecdotes, or even a very very short story.</p>
+                    <a href="/Services/Tooth_Fillings" class="btn btn-outline-dark">More Info...</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="list-group-item py-4">
+            <div class="row g-3 align-items-center">
+                <div class="col-md-2 text-center">
+                    <img src="/images/Tooth_Extraction.jpg" class="img-fluid rounded" alt="">
+                </div>
+                <div class="col-md-10">
+                    <h5 class="fw-bold">Tooth Extraction</h5>
+                    <p class="mb-2 text-muted">Body text for whatever you'd like to say. Add main takeaway points, quotes, anecdotes, or even a very very short story.</p>
+                    <a href="/Services/Tooth_Extraction" class="btn btn-outline-dark">More Info...</a>
+                </div>
             </div>
         </div>
     </div>
 </div>
+
+<div id="My_Appointment" class="container my-5">
+    <h2 class="fw-bold">My Appointment</h2>
+
+</div>
+
+

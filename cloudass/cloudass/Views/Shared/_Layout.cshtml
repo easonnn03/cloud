@@ -29,10 +29,21 @@
             </div>
         </nav>
 
-        <!-- Body Content -->
+    <!-- Body Content -->
+    @if (ViewData["FullWidthLayout"] as bool? == true)
+    {
+        <main role="main">
+            @RenderBody()
+        </main>
+    }
+    else
+    {
         <main role="main" class="container py-5">
             @RenderBody()
         </main>
+    }
+
+    @RenderSection("Scripts", required: false)
 
     </body>
 </html>
