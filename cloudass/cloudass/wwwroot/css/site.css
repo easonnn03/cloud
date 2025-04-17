@@ -330,3 +330,37 @@ html, body {
     padding: 0;
     overflow-x: hidden;
 }
+
+/* Highlight selected slot */
+.btn-check:checked + .btn-outline-secondary {
+    background-color: #258cfb !important;
+    color: white !important;
+    border-color: #258cfb !important;
+}
+
+.selected-following {
+    background-color: #258cfb !important;
+    color: white !important;
+    border-color: #258cfb !important;
+}
+
+/* Unselected style */
+.btn-outline-secondary {
+    background-color: white;
+    color: #258cfb;
+    border-color: #258cfb;
+}
+
+/* Hover effect (optional) */
+.btn-outline-secondary:hover {
+    background-color: #e0f0ff;
+    color: #258cfb;
+}
+
+btn-outline-secondary.disabled {
+    background-color: #ddd;
+    color: #888;
+    border-color: #bbb;
+    cursor: not-allowed;
+    pointer-events: none;
+}

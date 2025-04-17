@@ -14,9 +14,9 @@ namespace cloudass.Models
         [Required]
         public string FullName { get; set; }
 
-        [Required]
-        [Range(1, 120)]
-        public int Age { get; set; }
+        [Required(ErrorMessage = "Email is required.")]
+        [EmailAddress(ErrorMessage = "Please enter a valid email address.")]
+        public string Email { get; set; }
 
         [Required]
         [RegularExpression(@"^\d{10,11}$", ErrorMessage = "Phone number must be 10 or 11 digits.")]

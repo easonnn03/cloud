@@ -26,8 +26,8 @@
             </div>
 
             <div class="mt-4 d-flex justify-content-center gap-3 flex-wrap">
+                <a href="/Appointment/Appointment2" class="btn btn-dark">Back</a>
                 <button type="submit" class="btn btn-primary" id="confirmBtn" disabled>Confirm</button>
-                <a href="/Home/Appointment2" class="btn btn-dark">Back</a>
             </div>
         </form>
     </div>
@@ -35,6 +35,10 @@
 
 @section Scripts {
     <script>
+        const slotsNeeded = @ViewBag.SlotsNeeded ?? 1;
+        const bookedSlots = @Html.Raw(ViewBag.BookedSlots ?? "[]");
+        const allTimeInputs = [];
+
         const operatingHours = {
             start: 9,
             end: 17,
@@ -69,13 +73,27 @@
                     <div class="d-flex flex-wrap gap-2">`;
 
                 for (let hour = operatingHours.start; hour < operatingHours.end; hour++) {
+                    for (let minute = 0; minute < 60; minute += operatingHours.interval) {
                     if (hour === operatingHours.lunchStart) continue;
 
-                    const time = `${hour.toString().padStart(2, '0')}:00`;
-                    const value = `${dayStr} ${time}`;
-                    section += `<label class="btn btn-outline-secondary">
-                                    <input type="radio" name="SelectedTime" value="${value}" class="btn-check"> ${time}
-                                </label>`;
+                        const time = `${hour.toString().padStart(2, '0')}:${minute.toString().padStart(2, '0')}`;
+                        const value = `${dayStr} ${time}`;
+                        const id = `slot-${dayStr}-${time.replace(":", "")}`;
+                        const isBooked = bookedSlots.includes(value);
+
+                        if (isBooked) {
+                            section += `
+                                <input type="radio" disabled class="btn-check" id="${id}" name="SelectedTime" value="${value}">
+                                <label class="btn btn-outline-secondary disabled" for="${id}" style="background-color: #ccc; color: #666;">${time}</label>
+                            `;
+                        } else {
+                            section += `
+                                <input type="radio" class="btn-check" id="${id}" name="SelectedTime" value="${value}" data-index="${allTimeInputs.length}">
+                                <label class="btn btn-outline-secondary" for="${id}">${time}</label>
+                            `;
+                            allTimeInputs.push({ id, value });
+                        }
+                    }
                 }
 
                 section += "</div></div>";
@@ -88,5 +106,50 @@
                 });
             });
         }
+
+        setTimeout(() => {
+            const radios = document.querySelectorAll('input[name="SelectedTime"]');
+
+            radios.forEach((radio, index) => {
+                radio.addEventListener("change", () => {
+                    // Deselect all first
+                    radios.forEach(r => r.checked = false);
+                                
+                    // Remove all previous highlights
+                    document.querySelectorAll('.btn-outline-secondary').forEach(label => {
+                        label.classList.remove('selected-following');
+                    });
+
+                    // Check if enough slots are available
+                    for (let i = 0; i < slotsNeeded; i++) {
+                        const target = radios[index + i];
+
+                        // ❗ Error handling: not enough space or slot is taken
+                        if (!target || target.disabled) {
+                            alert("Not enough available time slots after this one.");
+                            return;
+                        }
+                    }
+
+                    // Check selected + highlight others
+                    for (let i = 0; i < slotsNeeded; i++) {
+                        const target = radios[index + i];
+                        if (target && !target.disabled) {
+                            if (i === 0) {
+                                target.checked = true;
+                            }
+
+                            // Highlight related label
+                            const label = document.querySelector(`label[for="${target.id}"]`);
+                            if (label) {
+                                label.classList.add('selected-following');
+                            }
+                        }
+                    }
+
+                    confirmBtn.disabled = false;
+                });
+            });
+        }, 10);
     </script>
 }
