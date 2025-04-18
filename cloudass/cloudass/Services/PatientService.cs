@@ -25,5 +25,30 @@ namespace cloudass.Services
             }
 
         }
+
+        public PatientModel? FindPatientAsync(int id) {
+            PatientModel? patient = _patientRepository.FindPatientAsync(id);
+            if (patient != null)
+            {
+                Console.WriteLine("Patient Found:" + patient.FullName);
+            }
+            else { 
+                Console.WriteLine("Patient Not Found.");
+            }
+            return patient;
+        }
+
+        public List<PatientModel>? GetAllPatientAsync() {
+            var patients = _patientRepository.GetAllPatientAsync();
+            if (patients != null)
+            {
+                Console.WriteLine("All patients get.");
+            }
+            else
+            {
+                Console.WriteLine("Patients Not Found.");
+            }
+            return patients;
+        }
     }
 }

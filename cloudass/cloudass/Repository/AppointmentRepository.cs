@@ -73,15 +73,31 @@ namespace cloudass.Repository
             try
             {
                 var entityEntry = await _context.Appointments.AddAsync(appointment);
-                await _context.SaveChangesAsync();
-                return entityEntry.Entity;
+                var result = await _context.SaveChangesAsync();
+
+                if (result == 0)
+                {
+                    Console.WriteLine("SaveChangesAsync returned 0, insert failed!");
+                    return null;
+                }
+
+                // Verify appointment exists
+                var insertedAppointment = await _context.Appointments.FindAsync(entityEntry.Entity.Id);
+                if (insertedAppointment == null)
+                {
+                    Console.WriteLine($"Appointment ID {entityEntry.Entity.Id} not found after insert.");
+                    return null;
+                }
+
+                return insertedAppointment;
             }
             catch (Exception ex)
             {
-                Console.WriteLine(ex.ToString());
+                Console.WriteLine($"Insert failed with error: {ex.Message}");
                 return null;
             }
         }
+
 
         public async Task DeleteAppointmentAsync(AppointmentModel appointment)
         {

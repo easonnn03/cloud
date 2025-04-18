@@ -27,7 +27,7 @@
             </div>
 
             <div class="mt-4 d-flex justify-content-center gap-3 flex-wrap">
-                <a href="/Appointment/Appointment2" class="btn btn-dark">Back</a>
+                <a href="/Appointment/PersonalDetail" class="btn btn-dark">Back</a>
                 <button type="submit" class="btn btn-primary" id="confirmBtn" disabled>Confirm</button>
             </div>
         </form>
@@ -113,10 +113,15 @@
                 const firstDate = r.value.split(" ")[0];          // yyyy‑MM‑dd
 
                 for (let i = 0; i < slotsNeeded; i++) {
-                    const next = radios[idx + i];
-                    if (!next) break;                             // ran out of radios
-                    if (next.disabled) break;                     // slot taken
-                    if (next.value.split(" ")[0] !== firstDate) break; // next day – stop
+                    const next = radios[idx + i];                          // ran out of radios
+                    if (!next || next.disabled) {
+                        alert("Not enough available time slots after this one.");
+                        return
+                    };
+                    if (next.value.split(" ")[0] !== firstDate) {
+                        alert("Not enough available time slots after this one.");
+                        return;
+                    }; // next day – stop
                     selected.push(next);
                 }
 

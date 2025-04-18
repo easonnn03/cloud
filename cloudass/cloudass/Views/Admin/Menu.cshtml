@@ -1,0 +1,19 @@
+﻿@{
+    ViewData["Title"] = "View Appointments";
+    Layout = "_Layout";
+}
+
+<div class="d-flex justify-content-center align-items-start" style="min-height: 100vh; padding-top: 4rem;">
+    <div class="card shadow p-5" style="max-width: 500px; width: 100%;">
+        <h2 class="text-center fw-bold mb-4">Admin Dashboard</h2>
+
+        <div class="d-grid gap-3 mb-4">
+            <a href="/Admin/ServicePanel" class="btn btn-outline-primary btn-lg">Service Panel</a>
+            <a href="/Admin/ViewAppointment" class="btn btn-outline-primary btn-lg">Check Appointment</a>
+        </div>
+
+        <div class="text-center">
+            <a asp-controller="home" asp-action="" class="btn btn-dark">Back to Home</a>
+        </div>
+    </div>
+</div>

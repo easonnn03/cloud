@@ -4,7 +4,6 @@ using cloudass.Models;
 using cloudass.Models.DbTable;
 using cloudass.Services;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.IdentityModel.Tokens;
 using Newtonsoft.Json;
 
 namespace cloudass.Controllers
@@ -14,12 +13,14 @@ namespace cloudass.Controllers
         private readonly IAppointmentService _appointmentService;
         private readonly IPatientService _patientService;
         private readonly IDentalService _dentalService;
-        
-        public AppointmentController(IAppointmentService appointmentService, IPatientService patientService, IDentalService dentalService)
+        private readonly IEmailQueue _emailQueue;
+
+        public AppointmentController(IAppointmentService appointmentService, IPatientService patientService, IDentalService dentalService, IEmailQueue emailQueue)
         {
             _appointmentService = appointmentService;
             _patientService = patientService;
             _dentalService = dentalService;
+            _emailQueue = emailQueue;
         }
 
         [HttpGet]
@@ -47,6 +48,7 @@ namespace cloudass.Controllers
                     ViewBag.Error = "OTP Sent Failed.";
                     return View();
                 }
+                //return Redirect("TimeSlot");
             }
             ViewBag.Error = "Model State Invalid.";
             return View(patient);
@@ -88,11 +90,6 @@ namespace cloudass.Controllers
             var appts = await _appointmentService.GetAllAsync();
             if (appts is null || !appts.Any()) return RedirectToAction("Index", "Home");
 
-            /* --------------------------------------------------------------------
-               Build a flat list like  ["2025‑04‑20 09:00", "2025‑04‑20 09:30", …]
-               covering **every** half‑hour block already occupied, no matter how
-               long the existing appointment is.
-               -------------------------------------------------------------------- */
             var booked = new List<string>();
 
             foreach (var a in appts)
@@ -110,14 +107,11 @@ namespace cloudass.Controllers
             }
 
             ViewBag.BookedSlots = JsonConvert.SerializeObject(booked);
-
-            /* -------------------------------------------------------------------- */
             var vm = new TimeSlotViewModel
             {
                 all_appointments = appts,
-                slot_needed = service.RequiredSlot   // how many blocks THIS user needs
+                slot_needed = service.RequiredSlot
             };
-            /* -------------------------------------------------------------------- */
 
             return View(vm);
         }
@@ -223,6 +217,19 @@ namespace cloudass.Controllers
                 var add_appointment = await _appointmentService.AddAppointmentAsync(new_appointment);
                 if (add_appointment == null) { ViewBag.Error = "Add Appointment Failed. Redirect to home."; return Redirect("/"); }
                 HttpContext.Session.SetInt32("appointment_id",add_appointment.Id);
+
+                //send email here 
+                var appt = new EmailRequiredModel
+                {
+                    PatientName = added_patient.FullName,
+                    Email = added_patient.Email,
+                    AppointmentId = add_appointment.Id,
+                    ServiceName = asm.ServiceName,
+                    DateTimeUtc = selectedTime.ToUniversalTime()
+                };
+
+                _ = _emailQueue.SendEmailMessageAsync(appt);
+
                 return Redirect("BookScheduled");
             }
 

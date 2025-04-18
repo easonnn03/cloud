@@ -1,0 +1,35 @@
+﻿@model List<cloudass.Models.DbTable.AppointmentServiceModel>
+@{
+    ViewData["Title"] = "Manage Services";
+    Layout = "_Layout";
+}
+
+<div class="container my-5">
+    <h2 class="fw-bold mb-4">Manage Services</h2>
+    <div class="row">
+        @if (Model != null && Model.Any())
+        {
+            @foreach (var service in Model)
+            {
+                <div class="card mb-3 shadow @(service.IsActive ? "" : "")">
+                    <div class="card-body">
+                        <h5 class="card-title">@service.ServiceName</h5>
+                        <form method="post" asp-action="ToggleService">
+                            <input type="hidden" name="id" value="@service.ServiceId" />
+                            <button type="submit" class="btn @(service.IsActive ? "btn-danger" : "btn-success")">
+                                @(service.IsActive ? "Deactivate" : "Activate")
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            }
+        }
+        else
+        {
+            <div class="alert alert-warning text-center">No services found.</div>
+        }
+    </div>
+    <div class="mt-4 d-flex justify-content-center gap-3 flex-wrap">
+        <a href="/Admin/Menu" class="btn btn-dark px-4">Back to Menu</a>
+    </div>
+</div>

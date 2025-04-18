@@ -1,0 +1,53 @@
+﻿@model List<cloudass.Models.AppointmentDetailsViewModel>
+
+@{
+    ViewData["Title"] = "View Appointments";
+    Layout = "_Layout";
+}
+
+<div class="container my-5">
+    <h2 class="fw-bold mb-4">All Appointments</h2>
+    @if (ViewBag.Error != null)
+    {
+        <div class="alert alert-danger text-center rounded-3 shadow-sm" role="alert">
+            @ViewBag.Error
+        </div>
+    }
+    @if (Model != null && Model.Any())
+    {
+        <div class="list-group">
+            @foreach (var appt in Model)
+            {
+                @if (appt.status == "Scheduled"){
+                    <div class="list-group-item p-4 shadow-sm mb-3 rounded">
+                        <div class="row">
+                            <div class="col-md-8">
+                                <h5 class="fw-bold mb-1">Appointment ID: @appt.Id</h5>
+                                <p class="mb-1"><strong>Name:</strong> @appt.PatientName</p>
+                                <p class="mb-1"><strong>Phone:</strong> @appt.PatientPhone</p>
+                                <p class="mb-1"><strong>Service:</strong> @appt.DentistService</p>
+                                <p class="mb-1"><strong>Time:</strong> @appt.AppointmentDate.ToString("f")</p>
+                                <p class="mb-1"><strong>Duration:</strong> @appt.Duration</p>
+                                <p class="mb-0"><strong>Status:</strong> @appt.status</p>
+                            </div>
+                            <div class="col-md-4 text-end">
+                                <form method="post" asp-action="CancelAppointment">
+                                    <input type="hidden" name="appointmentId" value=@appt.Id />
+                                    <button type="submit" class="btn btn-danger">Cancel</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                }
+            }
+        </div>   
+    }
+    else
+    {
+        <div class="alert alert-info text-center">No appointments found.</div>
+    }
+
+    <div class="mt-4 d-flex justify-content-center">
+        <a href="/Admin/Menu" class="btn btn-dark">Back to Menu</a>
+    </div>
+</div>
