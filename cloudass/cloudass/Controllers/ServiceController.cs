@@ -14,7 +14,11 @@ namespace cloudass.Controllers
             return View();
         }
 
-        public IActionResult Tooth_Fillings()
+        public IActionResult Dental_Fillings()
+        {
+            return View();
+        }
+        public IActionResult Tooth_Extraction()
         {
             return View();
         }

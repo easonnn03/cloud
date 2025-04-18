@@ -1,4 +1,6 @@
-﻿<title>@ViewData["Title"] DenTeeth</title>
+﻿@model IEnumerable<cloudass.Models.DbTable.AppointmentServiceModel>
+
+<title>@ViewData["Title"] DenTeeth</title>
 
 <div class="hero-image text-white text-center d-flex align-items-center justify-content-center">
     <div class="hero-text">
@@ -22,7 +24,7 @@
 
     <!-- My Appointment -->
     <div class="col-md-6 mb-4">
-        <a href="Appointment/View_Appointment/#My_Appointment" class="text-decoration-none">
+        <a href="/Admin/View_Appointment" class="text-decoration-none">
             <div class="image-card position-relative overflow-hidden rounded">
                 <img src="/images/My_Appointment.jpg" class="w-100 h-100 object-fit-cover" alt="My Appointment">
                 <div class="image-overlay d-flex align-items-center justify-content-center">
@@ -38,60 +40,55 @@
 
     <div class="list-group">
         <!-- Card 1 -->
-        <div class="list-group-item py-4">
-            <div class="row g-3 align-items-center">
-                <div class="col-md-2 text-center">
-                    <img src="/images/Teeth_Cleaning.jpg" class="img-fluid rounded" alt="">
-                </div>
-                <div class="col-md-10">
-                    <h5 class="fw-bold">Teeth Cleaning</h5>
-                    <p class="mb-2 text-muted">Body text for whatever you'd like to say. Add main takeaway points, quotes, anecdotes, or even a very very short story.</p>
-                    <a href="/Services/Teeth_Cleaning" class="btn btn-outline-dark">More Info...</a>
-                </div>
-            </div>
-        </div>
+        @foreach (var service in Model)
+        {
 
-        <!-- Card 2 -->
-        <div class="list-group-item py-4">
-            <div class="row g-3 align-items-center">
-                <div class="col-md-2 text-center">
-                    <img src="/images/Braces.jpg" class="img-fluid rounded" alt="">
-                </div>
-                <div class="col-md-10">
-                    <h5 class="fw-bold">Braces</h5>
-                    <p class="mb-2 text-muted">Body text for whatever you'd like to say. Add main takeaway points, quotes, anecdotes, or even a very very short story.</p>
-                    <a href="/Services/Teeth_Bracing" class="btn btn-outline-dark">More Info...</a>
-                </div>
-            </div>
-        </div>
+            var isDisabled = !service.IsActive;
 
-        <!-- Card 3 -->
-        <div class="list-group-item py-4">
-            <div class="row g-3 align-items-center">
-                <div class="col-md-2 text-center">
-                    <img src="/images/Teeth_Filling.jpg" class="img-fluid rounded" alt="">
-                </div>
-                <div class="col-md-10">
-                    <h5 class="fw-bold">Fillings</h5>
-                    <p class="mb-2 text-muted">Body text for whatever you'd like to say. Add main takeaway points, quotes, anecdotes, or even a very very short story.</p>
-                    <a href="/Services/Tooth_Fillings" class="btn btn-outline-dark">More Info...</a>
-                </div>
-            </div>
-        </div>
+            string imageFile = "";
+            string Description = "";
 
-        <!-- Card 4 -->
-        <div class="list-group-item py-4">
-            <div class="row g-3 align-items-center">
-                <div class="col-md-2 text-center">
-                    <img src="/images/Tooth_Extraction.jpg" class="img-fluid rounded" alt="">
-                </div>
-                <div class="col-md-10">
-                    <h5 class="fw-bold">Tooth Extraction</h5>
-                    <p class="mb-2 text-muted">Body text for whatever you'd like to say. Add main takeaway points, quotes, anecdotes, or even a very very short story.</p>
-                    <a href="/Services/Tooth_Extraction" class="btn btn-outline-dark">More Info...</a>
+            switch (service.ServiceName)
+            {
+                case "Teeth Cleaning":
+                    imageFile = "Teeth_Cleaning.jpg";
+                    Description = "Professional tooth cleaning for oral hygiene.";
+                    break;
+                case "Teeth Bracing":
+                    imageFile = "Braces.jpg";
+                    Description = "Braces to correct teeth alignment.";
+                    break;
+                case "Dental Fillings":
+                    imageFile = "Teeth_Filling.jpg";
+                    Description = "Repair decayed or damaged teeth.";
+                    break;
+                case "Tooth Extraction":
+                    imageFile = "Tooth_Extraction.jpg";
+                    Description = "Safe tooth removal by professionals.";
+                    break;
+            }
+
+
+            <div class="list-group-item py-4 @(isDisabled ? "disabled-card" : "")">
+                <div class="row g-3 align-items-center">
+                    <div class="col-md-2 text-center">
+                        <img src="/images/@imageFile" class="img-fluid rounded @(isDisabled ? "opacity-50" : "")" alt="@service.ServiceName">
+                    </div>
+                    <div class="col-md-10">
+                        <h5 class="fw-bold">@service.ServiceName</h5>
+                        <p class="mb-2 text-muted">@Description</p>
+                        @if (!isDisabled)
+                        {
+                            <a href="/Services/@service.ServiceName.Replace(" ", "_")" class="btn btn-outline-dark">More Info...</a>
+                        }
+                        else
+                        {
+                            <button class="btn btn-secondary" disabled>Unavailable</button>
+                        }
+                    </div>
                 </div>
             </div>
-        </div>
+        }
     </div>
 </div>
 

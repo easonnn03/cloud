@@ -364,3 +364,9 @@ btn-outline-secondary.disabled {
     cursor: not-allowed;
     pointer-events: none;
 }
+
+.disabled-service {
+    opacity: 0.6;
+    filter: grayscale(100%) brightness(85%);
+    pointer-events: none; /* disables clicking */
+}

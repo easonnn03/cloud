@@ -2,7 +2,7 @@
 
 namespace cloudass.Models.DbTable
 {
-    public class Patient
+    public class PatientModel
     {
         [Key]
         public int Id { get; set; }
