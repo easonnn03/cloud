@@ -56,8 +56,7 @@ namespace cloudass.Services
         [HttpPost]
         public async Task<AppointmentModel?> AddAppointmentAsync(AppointmentModel appointment)
         {
-             AppointmentModel? added_appointment = await _appointmentRepository.AddAppointmentAsync(appointment);
-
+            AppointmentModel? added_appointment = await _appointmentRepository.AddAppointmentAsync(appointment);
             if (added_appointment != null) { 
                 return added_appointment;
             }

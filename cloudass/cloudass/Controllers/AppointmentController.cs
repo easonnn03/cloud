@@ -1,4 +1,4 @@
-﻿using System.Diagnostics;
+﻿ using System.Diagnostics;
 using System.Text;
 using cloudass.Models;
 using cloudass.Models.DbTable;
@@ -36,17 +36,17 @@ namespace cloudass.Controllers
             {
                 HttpContext.Session.SetString("Patient", JsonConvert.SerializeObject(patient));
 
-                // Await SendOtp()
-                //bool otpSent = await _appointmentService.SendOtp(patient.Phone);
-                //if (otpSent)
-                //{
-                //    return Redirect("OTP");
-                //}
-                //else {
-                //    ViewBag.Error = "OTP Sent Failed.";
-                //    return View();
-                //}
-                return Redirect("TimeSlot");
+                //Await SendOtp()
+                bool otpSent = await _appointmentService.SendOtp(patient.Phone);
+                if (otpSent)
+                {
+                    return Redirect("OTP");
+                }
+                else
+                {
+                    ViewBag.Error = "OTP Sent Failed.";
+                    return View();
+                }
             }
             ViewBag.Error = "Model State Invalid.";
             return View(patient);
@@ -124,7 +124,7 @@ namespace cloudass.Controllers
 
 
         [HttpPost]
-        public async Task<IActionResult> TimeSlot(DateTime start_time)
+        public IActionResult TimeSlot(DateTime start_time)
         {
             if (ModelState.IsValid)
             {
@@ -208,20 +208,22 @@ namespace cloudass.Controllers
                 var timeJson = HttpContext.Session.GetString("SelectedTime");
                 var selectedTime = JsonConvert.DeserializeObject<DateTime>(timeJson);
 
+                Console.WriteLine();
+
                 // Add Patient or Check Existing Patient
                 PatientModel? added_patient = await _patientService.AddPatientAsync(patient);
                 // Get service by name
                 AppointmentServiceModel? asm = _dentalService.getServiceByNameAsync(selectedService);
 
-                if (added_patient == null) { ViewBag.Error = "Add patient failed. Redirect to home."; Redirect("/"); }
-                if (asm == null) { ViewBag.Error = "Service not found. Redirect to home."; Redirect("/"); }
+                if (added_patient == null) { ViewBag.Error = "Add patient failed. Redirect to home."; return Redirect("/"); }
+                if (asm == null) { ViewBag.Error = "Service not found. Redirect to home."; return Redirect("/"); }
 
                 //Add appointment
                 AppointmentModel new_appointment = new() { PatientId = added_patient.Id, StartTime = selectedTime, status = AppointmentStatus.Scheduled, ServiceId = asm.ServiceId };
                 var add_appointment = await _appointmentService.AddAppointmentAsync(new_appointment);
-                if (add_appointment == null) { ViewBag.Error = "Add Appointment Failed. Redirect to home."; Redirect("/"); }
-                
-                Redirect("BookScheduled");
+                if (add_appointment == null) { ViewBag.Error = "Add Appointment Failed. Redirect to home."; return Redirect("/"); }
+                HttpContext.Session.SetInt32("appointment_id",add_appointment.Id);
+                return Redirect("BookScheduled");
             }
 
             return Redirect("/");
@@ -230,8 +232,19 @@ namespace cloudass.Controllers
         [HttpGet]
         public IActionResult BookScheduled()
         {
-            return View();
+            int? appointment_id = HttpContext.Session.GetInt32("appointment_id");
+            if (appointment_id == null)
+            {
+                TempData["Error"] = "Session appointment id missing. Redirected to Home.";
+                return Redirect("/");
+            }
+
+            AppointmentModel a = new();
+            a.Id = appointment_id.Value;
+
+            return View(a);
         }
+
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()

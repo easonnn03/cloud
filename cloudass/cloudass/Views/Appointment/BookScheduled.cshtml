@@ -3,3 +3,51 @@
 *@
 @{
 }
+@model cloudass.Models.DbTable.AppointmentModel
+@{
+    Layout = "_Layout";
+    ViewData["Title"] = "Booking Scheduled";
+}
+
+<div class="d-flex justify-content-center align-items-center" style="min-height: 100vh;">
+    <div class="text-center p-5 border rounded shadow bg-white" style="max-width: 500px; width: 100%;">
+
+        <!-- Animated Tick -->
+        <div class="mb-4">
+            <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="green" class="bi bi-check-circle-fill" viewBox="0 0 16 16" style="animation: pop 0.5s ease;">
+                <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM6.97 10.97a.75.75 0 0 0 1.08 0l3.992-3.992a.75.75 0 1 0-1.08-1.08L7.5 9.439 5.53 7.47a.75.75 0 0 0-1.06 1.06l2.5 2.5z" />
+            </svg>
+        </div>
+
+        <!-- Texts -->
+        <h2 class="fw-bold mb-3">Booked Successfully!</h2>
+
+        <p class="mb-4">Your appointment ID is: <strong>@Model.Id</strong></p>
+
+        <!-- Buttons -->
+        <div class="d-flex justify-content-center gap-3">
+            <a href="/" class="btn btn-outline-secondary">Back to Home</a>
+            <a href="/Appointment/SearchAppointment" class="btn btn-primary">View Appointment</a>
+        </div>
+
+    </div>
+</div>
+
+<!-- Animation for the tick -->
+<style>
+    @@keyframes pop {
+        0% {
+            transform: scale(0);
+            opacity: 0;
+        }
+
+        80% {
+            transform: scale(1.1);
+            opacity: 1;
+        }
+
+        100% {
+            transform: scale(1);
+        }
+    }
+</style>
