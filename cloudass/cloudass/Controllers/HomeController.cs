@@ -12,7 +12,7 @@
 //return Redirect("url");
 
 //RedirectActionResult redirect to action
-//return RedirectToAction("ActionName");
+//return RedirectToAction("ActionName","ControllerName");
 
 //StatusCodeResult returns HTTP status code
 //return StatusCode(404);

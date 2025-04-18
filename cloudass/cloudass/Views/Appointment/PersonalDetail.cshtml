@@ -1,0 +1,61 @@
+﻿@model cloudass.Models.DbTable.PatientModel
+@{
+
+    Layout = "_Layout";
+
+}
+
+<title>@ViewData["Title"] Make Appointment</title>
+
+<div id="Apppointment" class="d-flex justify-content-center" style="min-height: 100vh; align-items: flex-start; padding-bottom: 3rem;">
+    <div class="border rounded shadow p-5 bg-white" style="max-width: 500px; width: 100%;">
+        <h2 class="fw-bold mb-4 text-center">Step 1: Please enter your information</h2>
+        @if (ViewBag.Error != null)
+        {
+            <div class="alert alert-danger text-center rounded-3 shadow-sm" role="alert">
+                @ViewBag.Error
+            </div>
+        }
+        <form id="step1Form" asp-action="PersonalDetail" method="post">
+            <div class="mb-3">
+                <label asp-for="FullName" class="form-label">Full Name</label>
+                <input asp-for="FullName" class="form-control" placeholder="Enter your full name" required />
+                <span asp-validation-for="FullName" class="text-danger"></span>
+            </div>
+
+            <div class="mb-3">
+                <label asp-for="Email" class="form-label">Email</label>
+                <input asp-for="Email" type="email" class="form-control" placeholder="Enter your email"/>
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div>
+
+            <div class="mb-3">
+                <label asp-for="Phone" class="form-label">Phone Number</label>
+                <input asp-for="Phone" class="form-control" placeholder="e.g., 0123456789" pattern="^\d{10,11}$" required />
+                <span asp-validation-for="Phone" class="text-danger"></span>
+            </div>
+            <div class="mt-4 d-flex justify-content-center gap-3 flex-wrap">
+                <a href="/Home/Index/#Our_Service" class="btn btn-dark px-3">Back</a>
+                <button type="submit" class="btn btn-primary" id="nextBtn" disabled>Next</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+    <script>
+        // Enable Next button only if all fields are valid
+        const form = document.getElementById("step1Form");
+        const nextBtn = document.getElementById("nextBtn");
+
+        form.addEventListener("input", function () {
+            if (form.checkValidity()) {
+                nextBtn.disabled = false;
+            } else {
+                nextBtn.disabled = true;
+            }
+        });
+
+    </script>
+}

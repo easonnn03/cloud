@@ -1,0 +1,98 @@
+﻿@{
+    Layout = "_Layout";
+}
+
+<title>@ViewData["Title"] Make Appointment</title>
+
+<div class="d-flex justify-content-center" style="min-height: 100vh; align-items: flex-start; padding-top: 4rem;">
+    <div class="border rounded shadow p-5 bg-white" style="max-width: 500px; width: 100%;">
+        <h2 class="fw-bold mb-4 text-center">Step 2: Verify OTP</h2>
+
+        <p class="text-center text-muted mb-4">
+            We've sent a 6-digit verification code to your phone number.
+        </p>
+        @if (ViewBag.Error != null)
+        {
+            <div class="alert alert-danger text-center rounded-3 shadow-sm" role="alert">
+                @ViewBag.Error
+            </div>
+        }
+        <form asp-controller="Appointment" asp-action="OTP" method="post" id="verifyOtpForm">
+            <div class="mb-3">
+                <label class="form-label">Enter OTP</label>
+                <input type="text" maxlength="6" pattern="\d{6}" inputmode="numeric" class="form-control" placeholder="Enter the 6-digit code" required />
+            </div>
+
+            <div class="mt-4 d-flex justify-content-center gap-3 flex-wrap">
+                <a href="/Appointment/Appointment" class="btn btn-dark px-3">Back</a>
+                <button type="submit" class="btn btn-primary" id="nextBtn" disabled>Next</button>
+            </div>
+
+            <div class="text-center mt-3">
+                <a href="#" id="resendOTP" class="text-decoration-none">Resend OTP</a>
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+    <script>
+        const otpInput = document.querySelector('input[placeholder="Enter the 6-digit code"]');
+        const nextBtn = document.getElementById("nextBtn");
+        const resendBtn = document.getElementById("resendOTP");
+
+        let cooldownSeconds = 120;
+        let cooldownTimer = null;
+
+        function startCooldown() {
+            resendBtn.disabled = true;
+            updateResendText(cooldownSeconds);
+
+            cooldownTimer = setInterval(() => {
+                cooldownSeconds--;
+                if (cooldownSeconds <= 0) {
+                    clearInterval(cooldownTimer);
+                    resendBtn.disabled = false;
+                    resendBtn.innerText = "Resend OTP";
+                    cooldownSeconds = 120; // reset for next time
+                } else {
+                    updateResendText(cooldownSeconds);
+                }
+            }, 1000);
+        }
+
+        function updateResendText(secondsLeft) {
+            resendBtn.innerText = `Resend OTP (${secondsLeft}s)`;
+        }
+
+        // Start cooldown immediately when page loads
+        startCooldown();
+
+        // OTP input validation
+        otpInput.addEventListener("input", function () {
+            this.value = this.value.replace(/[^0-9]/g, '');
+            nextBtn.disabled = (this.value.length !== 6);
+        });
+
+        // When click Resend OTP
+        resendBtn.addEventListener("click", function (e) {
+            e.preventDefault();
+            if (resendBtn.disabled) return; // prevent double click
+
+            // Send OTP by AJAX (optional better UX) or simple redirect (simpler)
+            fetch('/Appointment/SendOtp', { method: 'POST' })
+                .then(response => {
+                    if (response.ok) {
+                        alert("OTP has been resent successfully!");
+                        startCooldown(); // Restart the cooldown
+                    } else {
+                        alert("Failed to resend OTP. Please try again.");
+                    }
+                })
+                .catch(() => {
+                    alert("Network error while resending OTP.");
+                });
+        });
+    </script>
+}

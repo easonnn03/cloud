@@ -1,0 +1,22 @@
+﻿<title>@ViewData["Title"] Teeth Cleaning</title>
+
+@{
+    Layout = "_Layout";
+    ViewData["FullWidthLayout"] = true;
+}
+
+<div class="Teeth-Cleaning-hero">
+    <div class="overlay text-center">
+        <h1 class="display-4 fw-bold">Teeth Whitening</h1>
+        <p class="lead">Over time, your smile can lose its brightness due to factors like coffee, tea, tobacco, or aging. 
+            At DenTeeth, our professional teeth whitening service is designed to safely and effectively restore your smile’s natural brilliance.</p>
+        <p class="lead">Using clinically approved whitening agents and the latest dental technology, 
+            our treatment lifts stubborn stains from the enamel surface, resulting in visibly whiter teeth — often in just one session.</p>
+        <p class="lead">The procedure is non-invasive, pain-free, and performed by our experienced dental team in a comfortable setting. 
+            Whether you're preparing for a big event or simply want to boost your confidence, teeth whitening is a fast and affordable way to transform your smile.</p>
+        <div class="mt-4 d-flex justify-content-center gap-3 flex-wrap">
+            <a asp-controller="Appointment" asp-action="PersonalDetail" asp-route-service="Teeth Cleaning" class="btn btn-outline-light px-4">Make Appointment</a>
+            <a href="/Home/Index/#Our_Service" class="btn btn-dark px-4">Back to Home</a>
+        </div>
+    </div>
+</div>

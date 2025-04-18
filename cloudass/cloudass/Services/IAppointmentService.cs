@@ -1,14 +1,16 @@
 ﻿using cloudass.Models;
+using cloudass.Models.DbTable;
 
 namespace cloudass.Services
 {
     public interface IAppointmentService
     {
-        Appointment GetAppointment(string id);
-        Task AddAppointmentAsync(Appointment appointment);
-        Task DeleteAppointmentAsync(string id);
-        Task UpdateAppointmentAsync(Appointment appointment);
-
+        Task<AppointmentDetailsViewModel?> GetAppointmentDetailsByIdAsync(int AppointmentId);
+        Task<bool> AppointmentExistsAsync(int id);
+        Task<bool> CancelAppointmentAsync(int id);
+        Task<AppointmentModel?> AddAppointmentAsync(AppointmentModel appointment);
+        Task<bool> SendOtp(string patient_phone);
+        Task<bool> VerifyOtp(string otp, string patient_phone);
     }
 
 }

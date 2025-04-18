@@ -1,4 +1,4 @@
-html {
+﻿html {
   font-size: 14px;
 }
 
@@ -19,4 +19,314 @@ html {
 
 body {
   margin-bottom: 60px;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f8f9fa;
+}
+
+/* Navigation Links */
+.navbar {
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+    min-height: auto;
+}
+
+.navbar .nav-link {
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 0.2;
+    color: #1b6ec2;
+}
+
+    .navbar .nav-link:hover {
+        color: #105fa5;
+    }
+
+.navbar-brand {
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+    font-size: 1.8rem; /* Optional: adjust font to reduce size */
+    line-height: 0.2;
+}
+
+/* Buttons */
+.btn-dark {
+    background-color: #1b6ec2;
+    border-color: #1861ac;
+}
+
+    .btn-dark:hover {
+        background-color: #155a9d;
+        border-color: #124a80;
+    }
+
+.image-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.image-card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+a.text-decoration-none:hover .image-overlay h3 {
+    text-decoration: underline;
+}
+
+/* Card Styling */
+.bg-light {
+    border-radius: 12px;
+    padding: 2rem;
+}
+
+/* Hero section */
+.hero {
+    background-color: #f0f2f5;
+    padding: 4rem 1rem;
+    text-align: center;
+}
+
+    .hero h1 {
+        font-size: 3rem;
+        font-weight: 700;
+    }
+
+    .hero p {
+        font-size: 1.25rem;
+        color: #666;
+    }
+
+/* Fix footer if needed later */
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    line-height: 60px;
+    background-color: #e9ecef;
+    text-align: center;
+}
+
+.hero-image {
+    background-image: url('/images/DenTeeth.jpg'); 
+    background-size: cover;
+    background-position: top;
+    height: 400px;
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.hero-text {
+    background-color: rgba(0, 0, 0, 0.4); /* Optional dark overlay */
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+    .hero-text h1,
+    .hero-text p {
+        color: #fff;
+        text-shadow: 1px 1px 4px rgba(0,0,0,0.6);
+    }
+
+.image-card {
+    height: 120px;
+    background-color: #000;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+    .image-card img {
+        object-fit: cover;
+        object-position: center;
+        height: 100%;
+        width: 100%;
+        opacity: 0.8;
+        transition: 0.3s ease-in-out;
+    }
+
+    .image-card:hover img {
+        opacity: 1;
+        transform: scale(1.02);
+    }
+
+.image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4);
+    color: white;
+    text-align: center;
+    transition: background 0.3s ease;
+}
+
+.image-card:hover .image-overlay {
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.list-group-item {
+    border: 1px solid #e5e5e5;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    background-color: #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.Teeth-Cleaning-hero {
+    position: relative;
+    min-height: 100vh;
+    width: 100vw;
+    background-image: url('/images/Teeth_Cleaning2.jpg'); /* Replace with actual image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* ✅ keeps it fixed on scroll */
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 0; /* remove unwanted margin */
+    padding: 0;
+    overflow: hidden;
+}
+
+.Teeth-Cleaning-hero .overlay {
+    background-color: rgba(0, 0, 0, 0.3); /* semi-transparent black */
+    padding-top: -10rem;
+    padding-bottom: 1rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    border-radius: 32px;
+    width: 90vw; /* Wider box */
+    height: 100vh; /* Taller box, near full page */
+    max-width: 1200px;
+    width: 90%;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow-wrap: break-word;
+    margin-top: 5rem; /* Push content lower to avoid navbar */
+}
+
+.Teeth-Bracing-hero {
+    position: relative;
+    min-height: 100vh;
+    width: 100vw;
+    background-image: url('/images/Braces2.jpg'); /* Replace with actual image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* ✅ keeps it fixed on scroll */
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 0; /* remove unwanted margin */
+    padding: 0;
+    overflow: hidden;
+}
+
+.Teeth-Bracing-hero .overlay {
+    background-color: rgba(0, 0, 0, 0.3); /* semi-transparent black */
+    padding-top: -10rem;
+    padding-bottom: 1rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    border-radius: 32px;
+    width: 90vw; /* Wider box */
+    height: 100vh; /* Taller box, near full page */
+    max-width: 1200px;
+    width: 90%;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow-wrap: break-word;
+    margin-top: 5rem; /* Distance between overlay and nav bar */
+}
+
+.Teeth-Filling-hero {
+    position: relative;
+    min-height: 100vh;
+    width: 100vw;
+    background-image: url('/images/Teeth_Filling.jpg'); /* Replace with actual image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* ✅ keeps it fixed on scroll */
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 0; /* remove unwanted margin */
+    padding: 0;
+    overflow: hidden;
+}
+
+.Teeth-Filling-hero .overlay {
+    background-color: rgba(0, 0, 0, 0.3); /* semi-transparent black */
+    padding-top: -10rem;
+    padding-bottom: 1rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    border-radius: 32px;
+    width: 90vw; /* Wider box */
+    height: 100vh; /* Taller box, near full page */
+    max-width: 1200px;
+    width: 90%;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow-wrap: break-word;
+    margin-top: 5rem; /* Distance between overlay and nav bar */
+}
+
+.Teeth-Extraction-hero {
+    position: relative;
+    min-height: 100vh;
+    width: 100vw;
+    background-image: url('/images/Tooth_Extraction.jpg'); /* Replace with actual image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* ✅ keeps it fixed on scroll */
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 0; /* remove unwanted margin */
+    padding: 0;
+    overflow: hidden;
+}
+
+.Teeth-Extraction-hero .overlay {
+    background-color: rgba(0, 0, 0, 0.3); /* semi-transparent black */
+    padding-top: -10rem;
+    padding-bottom: 1rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    border-radius: 32px;
+    width: 90vw; /* Wider box */
+    height: 100vh; /* Taller box, near full page */
+    max-width: 1200px;
+    width: 90%;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow-wrap: break-word;
+    margin-top: 5rem; /* Distance between overlay and nav bar */
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
 }

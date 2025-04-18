@@ -1,0 +1,47 @@
+﻿@model cloudass.Models.AppointmentSummaryViewModel
+@{
+
+    Layout = "_Layout";
+    ViewData["Title"] = "Appointment Summary";
+}
+
+<div class="d-flex justify-content-center" style="min-height: 100vh; align-items: flex-start; padding-top: 4rem;">
+    <div class="border rounded shadow p-5 bg-white" style="max-width: 600px; width: 100%;">
+        <h2 class="fw-bold mb-4 text-center">Appointment Summary</h2>
+
+        <div class="card border-0">
+            <div class="card-body">
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                        <strong>Full Name:</strong> @Model.Full_Name
+                    </li>
+                    <li class="list-group-item">
+                        <strong>Email:</strong> @Model.Email
+                    </li>
+                    <li class="list-group-item">
+                        <strong>Phone Number:</strong> @Model.Phone
+                    </li>
+                    <li class="list-group-item">
+                        <strong>Service:</strong> @Model.SelectedService
+                    </li>
+                    <li class="list-group-item">
+                        <strong>Date & Time:</strong>
+                        @{
+                            var dt = Model.SelectedTime.ToString();
+                            var parsed = !string.IsNullOrEmpty(dt) ? DateTime.Parse(dt) : DateTime.MinValue;
+                        }
+                        @parsed.ToString("dddd, dd MMMM yyyy - hh:mm tt")
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="text-center mt-4">
+            <a href="/Appointment/TimeSlot" class="btn btn-outline-secondary me-2">Back</a>
+             <form asp-controller="Appointment" asp-action="Summary" method="post" class="d-inline">
+                <input type="hidden" name="confirmed" value="true" />
+                <button type="submit" class="btn btn-primary">Confirm</button>
+            </form>
+        </div>
+    </div>
+</div>

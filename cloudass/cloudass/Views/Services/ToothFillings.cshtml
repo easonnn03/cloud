@@ -1,0 +1,22 @@
+﻿<title>@ViewData["Title"] Tooth Filling</title>
+
+@{
+    Layout = "_Layout";
+    ViewData["FullWidthLayout"] = true;
+}
+
+<div class="Teeth-Filling-hero">
+    <div class="overlay text-center">
+        <h1 class="display-4 fw-bold">Tooth Filling</h1>
+        <p class="lead">Cavities and tooth decay are among the most common dental issues — but they’re also some of the easiest to treat. 
+            At DenTeeth, our tooth filling services are designed to restore the strength, shape, and appearance of damaged teeth while preventing further decay.</p>
+        <p class="lead">Our fillings are made from high-quality, durable materials such as composite resin, ceramic, or amalgam, depending on your needs and preferences. 
+            Whether it’s a small cavity or a larger area of decay, we carefully remove the affected portion of the tooth and fill it with a biocompatible material that blends naturally with your smile.</p>
+        <p class="lead">Tooth fillings not only repair the damage but also help maintain proper bite alignment and prevent infection or tooth loss. 
+            The procedure is quick, virtually painless, and performed under local anesthesia to ensure your comfort throughout the process.</p>
+        <div class="mt-4 d-flex justify-content-center gap-3 flex-wrap">
+            <a asp-controller="Appointment" asp-action="PersonalDetail" asp-route-service="Dental Fillings" class="btn btn-outline-light px-4">Make Appointment</a>
+            <a href="/Home/Index/#Our_Service" class="btn btn-dark px-4">Back to Home</a>
+        </div>
+    </div>
+</div>
