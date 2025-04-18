@@ -14,12 +14,14 @@ namespace cloudass.Controllers
         private readonly IAppointmentService _appointmentService;
         private readonly IPatientService _patientService;
         private readonly IDentalService _dentalService;
+        private readonly IEmailQueue _emailQueue;
         
-        public AppointmentController(IAppointmentService appointmentService, IPatientService patientService, IDentalService dentalService)
+        public AppointmentController(IAppointmentService appointmentService, IPatientService patientService, IDentalService dentalService, IEmailQueue EmailQueue)
         {
             _appointmentService = appointmentService;
             _patientService = patientService;
             _dentalService = dentalService;
+            _emailQueue = EmailQueue;
         }
 
         [HttpGet]
@@ -220,7 +222,19 @@ namespace cloudass.Controllers
                 AppointmentModel new_appointment = new() { PatientId = added_patient.Id, StartTime = selectedTime, status = AppointmentStatus.Scheduled, ServiceId = asm.ServiceId };
                 var add_appointment = await _appointmentService.AddAppointmentAsync(new_appointment);
                 if (add_appointment == null) { ViewBag.Error = "Add Appointment Failed. Redirect to home."; Redirect("/"); }
-                
+
+                //send email here 
+                var appt = new EmailRequiredModel
+                {
+                    PatientName = added_patient.FullName,
+                    Email = added_patient.Email,
+                    AppointmentId = add_appointment.Id,
+                    ServiceName = asm.ServiceName,
+                    DateTimeUtc = selectedTime.ToUniversalTime()
+                };
+
+                _ = _emailQueue.SendEmailMessageAsync(appt);
+
                 Redirect("BookScheduled");
             }
 

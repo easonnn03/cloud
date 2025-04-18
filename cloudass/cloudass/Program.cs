@@ -4,6 +4,8 @@ using cloudass.Data;
 using cloudass.Repository;
 using cloudass.Services;
 using System.Globalization;
+using Amazon.SQS;
+using Amazon.Extensions.NETCore.Setup;
 
 CultureInfo.DefaultThreadCurrentCulture = new CultureInfo("en-US");
 CultureInfo.DefaultThreadCurrentUICulture = new CultureInfo("en-US");
@@ -20,11 +22,12 @@ builder.Services.AddScoped<IPatientService, PatientService>();
 builder.Services.AddScoped<IDentalServiceRepository, DentalServiceRepository>();
 builder.Services.AddScoped<IDentalService, DentalService>();
 builder.Services.AddDefaultIdentity<User>(options => options.SignIn.RequireConfirmedAccount = true).AddEntityFrameworkStores<AppDbContext>();
-builder.Services.AddHttpClient();  
+builder.Services.AddDefaultAWSOptions(builder.Configuration.GetAWSOptions());
 
 // Adds mvc support: Controller + Views(enables controller based routing: HomeController handling requests)
 builder.Services.AddControllersWithViews();
 builder.Services.AddRazorPages();
+builder.Services.AddAWSService<IAmazonSQS>();
 
 //create a app instance (actual running web app)
 var app = builder.Build();
