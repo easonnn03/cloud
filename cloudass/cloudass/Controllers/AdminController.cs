@@ -67,5 +67,9 @@ namespace cloudass.Controllers
             } 
             return View(advms);
         }
+        public IActionResult Menu()
+        {
+            return View();
+        }
     }
 }
