@@ -22,7 +22,6 @@ builder.Services.AddScoped<IPatientService, PatientService>();
 builder.Services.AddScoped<IDentalServiceRepository, DentalServiceRepository>();
 builder.Services.AddScoped<IDentalService, DentalService>();
 builder.Services.AddScoped<IEmailQueue, EmailQueue>();
-builder.Services.AddDefaultIdentity<User>(options => options.SignIn.RequireConfirmedAccount = true).AddEntityFrameworkStores<AppDbContext>();
 builder.Services.AddDefaultAWSOptions(builder.Configuration.GetAWSOptions());
 builder.Services.AddHttpClient();  
 
