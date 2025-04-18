@@ -1,6 +1,7 @@
-﻿
+﻿@model cloudass.Models.TimeSlotViewModel
 @{
     Layout = "_Layout";
+    ViewData["Title"] = "Make Appointment";
 }
 
 <title>@ViewData["Title"] Make Appointment</title>
@@ -9,7 +10,7 @@
     <div class="border rounded shadow p-5 bg-white" style="max-width: 800px; width: 100%;">
         <h2 class="fw-bold mb-4 text-center">Step 3: Select Time Slot</h2>
 
-        <form method="post" asp-action="Summary">
+        <form method="post" asp-controller="Appointment" asp-action="Summary">
             <div class="mb-3">
                 <label for="selectedMonth" class="form-label">Select Month</label>
                 <select class="form-select" id="selectedMonth">
@@ -35,121 +36,108 @@
 
 @section Scripts {
     <script>
-        const slotsNeeded = @ViewBag.SlotsNeeded ?? 1;
-        const bookedSlots = @Html.Raw(ViewBag.BookedSlots ?? "[]");
-        const allTimeInputs = [];
+        /* -----------------------------  data ------------------------------ */
+        const slotsNeeded = @Model.slot_needed;                   // e.g. 3 blocks
+        const bookedSlots = @Html.Raw(ViewBag.BookedSlots ?? "[]"); // real JS array
 
-        const operatingHours = {
-            start: 9,
-            end: 17,
-            lunchStart: 12,
-            lunchEnd: 13,
-            interval: 30
-        };
+        /* business hours */
+        const HOURS = { open: 9, close: 17, lunchStart: 12, lunchEnd: 13, step: 30 };
 
-        const container = document.getElementById("daySlotContainer");
-        const monthDropdown = document.getElementById("selectedMonth");
+        const monthSel   = document.getElementById("selectedMonth");
+        const slotWrap   = document.getElementById("daySlotContainer");
         const confirmBtn = document.getElementById("confirmBtn");
 
-        monthDropdown.addEventListener("change", generateSlots);
-        window.addEventListener("load", generateSlots);
+        monthSel.addEventListener("change", drawCalendar);
+        window.addEventListener("load",       drawCalendar);
 
-        function generateSlots() {
-            const selectedMonth = monthDropdown.value;
-            const startDate = new Date(selectedMonth + "-01");
-            const endDate = new Date(startDate.getFullYear(), startDate.getMonth() + 1, 0);
+        /* --------------------------  draw the grid ------------------------- */
+        function drawCalendar() {
+            slotWrap.innerHTML = "";
+            const start = new Date(monthSel.value + "-01");
+            const end   = new Date(start.getFullYear(), start.getMonth()+1, 0);
+            const today    = new Date();          // now
+            today.setHours(0, 0, 0, 0);           // → 00:00 today
+            
+            for (let d = new Date(start); d <= end; d.setDate(d.getDate()+1)) {
 
-            container.innerHTML = "";
+                if (d < today) continue;
+                
+                if (d.getDay() === 0 || d.getDay() === 6) continue;       // skip weekend
 
-            for (let d = new Date(startDate); d <= endDate; d.setDate(d.getDate() + 1)) {
-                const day = new Date(d);
-                const dayOfWeek = day.getDay();
-                if (dayOfWeek === 0 || dayOfWeek === 6) continue; // Skip Sat/Sun
+                const dayISO = d.toISOString().split('T')[0];             // yyyy‑MM‑dd
+                let html = `<div class="mb-3">
+                              <label class="fw-semibold">${d.toDateString()}</label>
+                              <div class="d-flex flex-wrap gap-2">`;
 
-                const dayStr = day.toISOString().split('T')[0];
+                for (let h = HOURS.open; h < HOURS.close; h++) {
+                    if (h === HOURS.lunchStart) continue;
+                    for (let m = 0; m < 60; m += HOURS.step) {
+                        const time = `${String(h).padStart(2,'0')}:${String(m).padStart(2,'0')}`;
+                        const stamp = `${dayISO} ${time}`;
+                        const id    = `slot-${stamp.replace(/[:\s]/g,'')}`;
+                        const taken = bookedSlots.includes(stamp);
 
-                let section = `<div class="mb-3">
-                    <label class="fw-semibold">${day.toDateString()}</label>
-                    <div class="d-flex flex-wrap gap-2">`;
-
-                for (let hour = operatingHours.start; hour < operatingHours.end; hour++) {
-                    for (let minute = 0; minute < 60; minute += operatingHours.interval) {
-                    if (hour === operatingHours.lunchStart) continue;
-
-                        const time = `${hour.toString().padStart(2, '0')}:${minute.toString().padStart(2, '0')}`;
-                        const value = `${dayStr} ${time}`;
-                        const id = `slot-${dayStr}-${time.replace(":", "")}`;
-                        const isBooked = bookedSlots.includes(value);
-
-                        if (isBooked) {
-                            section += `
-                                <input type="radio" disabled class="btn-check" id="${id}" name="SelectedTime" value="${value}">
-                                <label class="btn btn-outline-secondary disabled" for="${id}" style="background-color: #ccc; color: #666;">${time}</label>
-                            `;
-                        } else {
-                            section += `
-                                <input type="radio" class="btn-check" id="${id}" name="SelectedTime" value="${value}" data-index="${allTimeInputs.length}">
-                                <label class="btn btn-outline-secondary" for="${id}">${time}</label>
-                            `;
-                            allTimeInputs.push({ id, value });
-                        }
+                        html += taken
+                                ? `<input class="btn-check"  type="radio" id="${id}" disabled>
+                                   <label  class="btn btn-outline-secondary disabled"
+                                           for="${id}" style="background:#ccc;color:#666">${time}</label>`
+                                : `<input class="btn-check"  type="radio" id="${id}"
+                                           name="SelectedTime" value="${stamp}">
+                                   <label  class="btn btn-outline-secondary" for="${id}">${time}</label>`;
                     }
                 }
 
-                section += "</div></div>";
-                container.innerHTML += section;
+                html += `</div></div>`;
+                slotWrap.insertAdjacentHTML("beforeend", html);
             }
 
-            document.querySelectorAll('input[name="SelectedTime"]').forEach(btn => {
-                btn.addEventListener("change", () => {
-                    confirmBtn.disabled = false;
-                });
-            });
+            attachHandlers();                // listeners must be re‑wired every redraw
         }
 
-        setTimeout(() => {
-            const radios = document.querySelectorAll('input[name="SelectedTime"]');
+        /* -----------------  pick N consecutive blocks at once -------------- */
+        function attachHandlers() {
+            confirmBtn.disabled = true;
+            const radios = [...document.querySelectorAll('input[name="SelectedTime"]')];
 
-            radios.forEach((radio, index) => {
-                radio.addEventListener("change", () => {
-                    // Deselect all first
-                    radios.forEach(r => r.checked = false);
-                                
-                    // Remove all previous highlights
-                    document.querySelectorAll('.btn-outline-secondary').forEach(label => {
-                        label.classList.remove('selected-following');
+            radios.forEach((r, idx) => r.addEventListener("change", () => {
+                /* ----- clear previous state ----- */
+                document.querySelectorAll('.selected-following')
+                        .forEach(lbl => lbl.classList.remove('selected-following'));
+                radios.forEach(x => x.checked = false);
+
+                /* ----- build the new chain (same day only) ----- */
+                const selected = [];
+                const firstDate = r.value.split(" ")[0];          // yyyy‑MM‑dd
+
+                for (let i = 0; i < slotsNeeded; i++) {
+                    const next = radios[idx + i];
+                    if (!next) break;                             // ran out of radios
+                    if (next.disabled) break;                     // slot taken
+                    if (next.value.split(" ")[0] !== firstDate) break; // next day – stop
+                    selected.push(next);
+                }
+
+                /* check at least one slot selected (always true) */
+                if (selected.length) {
+                    selected[0].checked = true;                   // only first posts
+                    selected.forEach(n => {
+                        const lbl = document.querySelector(`label[for="${n.id}"]`);
+                        lbl?.classList.add('selected-following');
                     });
-
-                    // Check if enough slots are available
-                    for (let i = 0; i < slotsNeeded; i++) {
-                        const target = radios[index + i];
-
-                        // ❗ Error handling: not enough space or slot is taken
-                        if (!target || target.disabled) {
-                            alert("Not enough available time slots after this one.");
-                            return;
-                        }
-                    }
-
-                    // Check selected + highlight others
-                    for (let i = 0; i < slotsNeeded; i++) {
-                        const target = radios[index + i];
-                        if (target && !target.disabled) {
-                            if (i === 0) {
-                                target.checked = true;
-                            }
-
-                            // Highlight related label
-                            const label = document.querySelector(`label[for="${target.id}"]`);
-                            if (label) {
-                                label.classList.add('selected-following');
-                            }
-                        }
-                    }
-
                     confirmBtn.disabled = false;
-                });
-            });
-        }, 10);
+                }
+            }));
+        }
+
+
+        /* --------------------------  cosmetic CSS -------------------------- */
+        const style = document.createElement('style');
+        style.textContent = `
+            .selected-following.btn-outline-secondary {
+                background:#0d6efd !important;   /* same blue as .btn-primary */
+                color:#fff !important;
+                border-color:#0d6efd !important;
+            }`;
+        document.head.appendChild(style);
     </script>
 }

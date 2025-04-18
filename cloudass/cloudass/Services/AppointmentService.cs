@@ -24,6 +24,20 @@ namespace cloudass.Services
             return await _appointmentRepository.GetAppointmentDetailsByIdAsync(AppointmentId);
         }
 
+        public async Task<List<AppointmentModel>?> GetAllAsync() {
+            var result = await _appointmentRepository.GetAllAsync();
+            if (result != null)
+            {
+                Console.WriteLine("Get all apointments successfully.");
+                return result;
+            }
+            else
+            {
+                Console.WriteLine("Error: Apointments not found");
+                return null;
+            }
+        }
+
         public async Task<bool> AppointmentExistsAsync(int id)
         {
             return await _appointmentRepository.CheckAppointmentExistsByIdAsync(id);
@@ -121,7 +135,7 @@ namespace cloudass.Services
                     Console.WriteLine("Failed verify phone: " + error); // Error message
                     return false;
                 }
-            }
+            } 
             catch (Exception ex)
             {
                 Console.WriteLine("Exception occurred: " + ex.Message);

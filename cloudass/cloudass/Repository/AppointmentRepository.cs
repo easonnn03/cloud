@@ -2,6 +2,7 @@
 using cloudass.Models;
 using cloudass.Models.DbTable;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.IdentityModel.Tokens;
 
 namespace cloudass.Repository
 {
@@ -36,6 +37,12 @@ namespace cloudass.Repository
             };
 
             return details;
+        }
+
+        public async Task<List<AppointmentModel>?> GetAllAsync() {
+            var appointmentList = await _context.Appointments.ToListAsync();
+            if (appointmentList.IsNullOrEmpty()) return null;
+            return appointmentList;
         }
 
         public async Task<bool> CheckAppointmentExistsByIdAsync(int id)

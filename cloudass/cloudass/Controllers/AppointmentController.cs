@@ -4,6 +4,7 @@ using cloudass.Models;
 using cloudass.Models.DbTable;
 using cloudass.Services;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.IdentityModel.Tokens;
 using Newtonsoft.Json;
 
 namespace cloudass.Controllers
@@ -36,15 +37,16 @@ namespace cloudass.Controllers
                 HttpContext.Session.SetString("Patient", JsonConvert.SerializeObject(patient));
 
                 // Await SendOtp()
-                bool otpSent = await _appointmentService.SendOtp(patient.Phone);
-                if (otpSent)
-                {
-                    return Redirect("OTP");
-                }
-                else {
-                    ViewBag.Error = "OTP Sent Failed.";
-                    return View();
-                }
+                //bool otpSent = await _appointmentService.SendOtp(patient.Phone);
+                //if (otpSent)
+                //{
+                //    return Redirect("OTP");
+                //}
+                //else {
+                //    ViewBag.Error = "OTP Sent Failed.";
+                //    return View();
+                //}
+                return Redirect("TimeSlot");
             }
             ViewBag.Error = "Model State Invalid.";
             return View(patient);
@@ -76,10 +78,50 @@ namespace cloudass.Controllers
 
 
         [HttpGet]
-        public IActionResult TimeSlot()
+        public async Task<IActionResult> TimeSlot()
         {
-            return View();
+            var serviceName = HttpContext.Session.GetString("SelectedService");
+            var service = _dentalService.getServiceByNameAsync(serviceName);
+            if (service is null) return RedirectToAction("Index", "Home");
+
+            // Every appointment that already exists
+            var appts = await _appointmentService.GetAllAsync();
+            if (appts is null || !appts.Any()) return RedirectToAction("Index", "Home");
+
+            /* --------------------------------------------------------------------
+               Build a flat list like  ["2025‑04‑20 09:00", "2025‑04‑20 09:30", …]
+               covering **every** half‑hour block already occupied, no matter how
+               long the existing appointment is.
+               -------------------------------------------------------------------- */
+            var booked = new List<string>();
+
+            foreach (var a in appts)
+            {
+                // pull the service for THIS appointment so you know its length
+                var s = await _dentalService.getServiceAsync(a.ServiceId);
+                if (s is null) continue;
+
+                for (int k = 0; k < s.RequiredSlot; k++)
+                {
+                    booked.Add(a.StartTime
+                                 .AddMinutes(k * 30)
+                                 .ToString("yyyy-MM-dd HH:mm"));
+                }
+            }
+
+            ViewBag.BookedSlots = JsonConvert.SerializeObject(booked);
+
+            /* -------------------------------------------------------------------- */
+            var vm = new TimeSlotViewModel
+            {
+                all_appointments = appts,
+                slot_needed = service.RequiredSlot   // how many blocks THIS user needs
+            };
+            /* -------------------------------------------------------------------- */
+
+            return View(vm);
         }
+
 
         [HttpPost]
         public async Task<IActionResult> TimeSlot(DateTime start_time)

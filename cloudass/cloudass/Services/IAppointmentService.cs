@@ -6,6 +6,8 @@ namespace cloudass.Services
     public interface IAppointmentService
     {
         Task<AppointmentDetailsViewModel?> GetAppointmentDetailsByIdAsync(int AppointmentId);
+
+        Task<List<AppointmentModel>?> GetAllAsync();
         Task<bool> AppointmentExistsAsync(int id);
         Task<bool> CancelAppointmentAsync(int id);
         Task<AppointmentModel?> AddAppointmentAsync(AppointmentModel appointment);

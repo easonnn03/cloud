@@ -20,11 +20,11 @@
         <form asp-controller="Appointment" asp-action="OTP" method="post" id="verifyOtpForm">
             <div class="mb-3">
                 <label class="form-label">Enter OTP</label>
-                <input type="text" maxlength="6" pattern="\d{6}" inputmode="numeric" class="form-control" placeholder="Enter the 6-digit code" required />
+                <input type="text" name="otp" maxlength="6" pattern="\d{6}" inputmode="numeric" class="form-control" placeholder="Enter the 6-digit code" required />
             </div>
 
             <div class="mt-4 d-flex justify-content-center gap-3 flex-wrap">
-                <a href="/Appointment/Appointment" class="btn btn-dark px-3">Back</a>
+                <a href="/Appointment/PersonalDetail" class="btn btn-dark px-3">Back</a>
                 <button type="submit" class="btn btn-primary" id="nextBtn" disabled>Next</button>
             </div>
 
