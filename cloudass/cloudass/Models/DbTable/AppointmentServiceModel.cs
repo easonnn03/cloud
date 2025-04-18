@@ -2,7 +2,7 @@
 
 namespace cloudass.Models.DbTable
 {
-    public class AppointmentService
+    public class AppointmentServiceModel
     {
         [Key]
         public int ServiceId { get; set; }

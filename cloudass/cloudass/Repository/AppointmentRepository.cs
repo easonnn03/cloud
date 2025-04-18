@@ -63,7 +63,7 @@ namespace cloudass.Repository
         }
 
         //JJ Part
-        public async Task AddAppointmentAsync(Appointment appointment)
+        public async Task AddAppointmentAsync(AppointmentModel appointment)
         {
             await _context.Appointments.AddAsync(appointment);
             await _context.SaveChangesAsync();

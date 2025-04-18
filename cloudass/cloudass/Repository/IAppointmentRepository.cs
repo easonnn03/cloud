@@ -13,6 +13,6 @@ namespace cloudass.Repository
         Task SaveChangesAsync();
 
         //JJ Part 
-        Task AddAppointmentAsync(Appointment appointment);
+        Task AddAppointmentAsync(AppointmentModel appointment);
     }
 }

@@ -18,9 +18,9 @@ public class AppDbContext : IdentityDbContext<User>
     {
     }
 
-    public DbSet<Appointment> Appointments { get; set; }
-    public DbSet<Patient> Patients { get; set; }
-    public DbSet<AppointmentService> AppointmentServices { get; set; }
+    public DbSet<AppointmentModel> Appointments { get; set; }
+    public DbSet<PatientModel> Patients { get; set; }
+    public DbSet<AppointmentServiceModel> AppointmentServices { get; set; }
 
 
     protected override void OnModelCreating(ModelBuilder builder)
